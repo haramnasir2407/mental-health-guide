@@ -1,6 +1,9 @@
-import { createMDX } from 'fumadocs-mdx/next';
+import { createMDX } from "fumadocs-mdx/next";
 
-const withMDX = createMDX();
+const withMDX = createMDX({
+  // customise the config file path
+  // configPath: "source.config.ts"
+});
 
 /** @type {import('next').NextConfig} */
 const config = {
@@ -8,8 +11,8 @@ const config = {
   async rewrites() {
     return [
       {
-        source: '/docs/:path*.mdx',
-        destination: '/llms.mdx/docs/:path*',
+        source: "/docs/:path*.mdx",
+        destination: "/llms.mdx/docs/:path*",
       },
     ];
   },
