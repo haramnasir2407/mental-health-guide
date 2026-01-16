@@ -8,6 +8,14 @@ const tenorSans = Tenor_Sans({
   display: "swap",
 });
 
+// Animation styles
+const floatAnimation = "animate-[float_6s_ease-in-out_infinite]";
+const floatDelayAnimation = "animate-[float_6s_ease-in-out_infinite_2s]";
+const pulseSlowAnimation = "animate-[pulse_4s_ease-in-out_infinite]";
+const rotateSlowAnimation = "animate-[rotate_20s_linear_infinite]";
+const bobAnimation = "animate-[bob_4s_ease-in-out_infinite]";
+const bobDelayAnimation = "animate-[bob_4s_ease-in-out_infinite_1s]";
+
 export default function HomePage() {
   return (
     <>
@@ -22,11 +30,14 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[calc(100vh-160px)]">
             {/* Left Content */}
             <div className="relative flex flex-col justify-center space-y-6 lg:space-y-8 lg:pr-8">
-              {/* Decorative Border */}
-              <div className="absolute -top-5 right-20 w-60 h-50 border-t border-r border-r-gray-950 border-t-gray-950 opacity-100"></div>
+              {/* Decorative Border desktop */}
+              <div className="hidden lg:block absolute -top-5 right-20 w-60 h-50 border-t border-r border-r-gray-950 border-t-gray-950 opacity-100"></div>
+
+              {/* Decorative Border mobile */}
+              <div className="lg:hidden absolute -top-5 left-1 w-30 h-30 border-t border-l border-l-gray-950 border-t-gray-950 opacity-100"></div>
 
               <p
-                className="text-base lg:text-lg tracking-wide font-satoshi"
+                className="text-sm lg:text-base xl:text-lg tracking-wide font-satoshi sm:text-left text-center"
                 style={{
                   color: "#6B7280",
                   fontWeight: 400,
@@ -36,7 +47,18 @@ export default function HomePage() {
               </p>
 
               <h1
-                className={`text-6xl lg:text-7xl xl:text-8xl leading-[1.1] ${tenorSans.className}`}
+                className={`lg:hidden text-4xl sm:text-5xl text-center  ${tenorSans.className}`}
+                style={{
+                  fontWeight: 400,
+                  color: "#000000",
+                  letterSpacing: "-0.02em",
+                }}
+              >
+                Mental <br /> Health Guide
+              </h1>
+
+              <h1
+                className={`hidden lg:block text-4xl sm:text-5xl lg:text-7xl xl:text-8xl leading-[1.1] ${tenorSans.className}`}
                 style={{
                   fontWeight: 400,
                   color: "#000000",
@@ -49,6 +71,157 @@ export default function HomePage() {
                 <br />
                 Guide
               </h1>
+
+              {/* Mobile Decorative Elements */}
+              <div className="relative h-[280px] lg:hidden my-8 mx-auto max-w-[400px] w-full">
+                {/* Gradient Ellipse Background */}
+                <div
+                  className={`w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-110 ${pulseSlowAnimation}`}
+                >
+                  <Image
+                    src="/assets/gradient-ellipse.svg"
+                    alt=""
+                    width={300}
+                    height={300}
+                    className="object-contain opacity-100"
+                  />
+                </div>
+
+                {/* Top Left - Star */}
+                <div
+                  className={`absolute top-[5%] left-[8%] z-10 ${rotateSlowAnimation}`}
+                >
+                  <Image
+                    src="/assets/hero-star.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                  />
+                </div>
+
+                {/* Top Center - Playbook */}
+                <div
+                  className={`absolute top-[8%] left-[15%] z-10 ${floatAnimation}`}
+                >
+                  <Image
+                    src="/assets/playbook.svg"
+                    alt="Playbook"
+                    width={60}
+                    height={60}
+                    className="drop-shadow-lg"
+                  />
+                </div>
+
+                {/* Top Right - Flower in Circle */}
+                <div
+                  className={`absolute top-[5%] right-[35%] z-10 ${pulseSlowAnimation}`}
+                >
+                  <Image
+                    src="/assets/ellipse1_2.svg"
+                    alt=""
+                    width={100}
+                    height={100}
+                    className="opacity-100"
+                  />
+                </div>
+                <div
+                  className={`absolute top-[5%] right-[35%] z-20 ${bobAnimation}`}
+                >
+                  <div className="w-[100px] h-[100px] flex items-center justify-center">
+                    <Image
+                      src="/assets/flower1.svg"
+                      alt=""
+                      width={60}
+                      height={60}
+                    />
+                  </div>
+                </div>
+
+                {/* Middle Right - Cactus */}
+                <div
+                  className={`absolute top-[30%] right-[20%] z-20 ${floatDelayAnimation}`}
+                >
+                  <Image
+                    src="/assets/cactus.svg"
+                    alt=""
+                    width={35}
+                    height={35}
+                  />
+                </div>
+
+                {/* Center Left - Flower in Circle */}
+                <div
+                  className={`absolute top-[45%] left-[8%] z-10 ${pulseSlowAnimation}`}
+                >
+                  <Image
+                    src="/assets/ellipse1_2.svg"
+                    alt=""
+                    width={110}
+                    height={110}
+                    className="opacity-100"
+                  />
+                </div>
+                <div
+                  className={`absolute top-[45%] left-[8%] z-20 ${bobAnimation}`}
+                >
+                  <div className="w-[110px] h-[110px] flex items-center justify-center">
+                    <Image
+                      src="/assets/flower2.svg"
+                      alt=""
+                      width={70}
+                      height={70}
+                    />
+                  </div>
+                </div>
+
+                {/* Center - Fern in Circle */}
+                <div
+                  className={`absolute top-[52%] right-[20%] z-10 ${pulseSlowAnimation}`}
+                >
+                  <Image
+                    src="/assets/ellipse3.svg"
+                    alt=""
+                    width={90}
+                    height={90}
+                    className="opacity-100"
+                  />
+                </div>
+                <div
+                  className={`absolute top-[55%] right-[25%] z-15 ${bobDelayAnimation}`}
+                >
+                  <Image
+                    src="/assets/flower3.svg"
+                    alt=""
+                    width={50}
+                    height={75}
+                  />
+                </div>
+
+                {/* Bottom Center - Cat Paw */}
+                <div
+                  className={`absolute bottom-[8%] left-[45%] -translate-x-1/2 z-20 ${bobAnimation}`}
+                >
+                  <Image
+                    src="/assets/cat-paw.svg"
+                    alt=""
+                    width={70}
+                    height={70}
+                    className="drop-shadow-lg"
+                  />
+                </div>
+
+                {/* Bottom Left - Star */}
+                <div
+                  className={`absolute bottom-[40%] right-[15%] z-30 ${rotateSlowAnimation}`}
+                >
+                  <Image
+                    src="/assets/star2.svg"
+                    alt=""
+                    width={22}
+                    height={22}
+                  />
+                </div>
+              </div>
 
               <p
                 className="text-sm lg:text-base leading-relaxed max-w-lg font-satoshi"
@@ -92,7 +265,7 @@ export default function HomePage() {
                   </svg>
                 </Link>
 
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 justify-end ml-auto">
                   <span
                     className="text-xs lg:text-sm font-satoshi"
                     style={{
@@ -115,7 +288,9 @@ export default function HomePage() {
             {/* Right Decorative Elements */}
             <div className="relative h-[700px] hidden lg:block">
               {/* Gradient Ellipse Background */}
-              <div className="w-full h-full absolute lg:top-[45%] lg:left-[45%] xl:top-1/2 xl:left-1/2 top-[40%] left-[40%] -translate-x-1/2 -translate-y-1/2 scale-110">
+              <div
+                className={`w-full h-full absolute lg:top-[45%] lg:left-[45%] xl:top-1/2 xl:left-1/2 top-[40%] left-[40%] -translate-x-1/2 -translate-y-1/2 scale-110 ${pulseSlowAnimation}`}
+              >
                 <Image
                   src="/assets/gradient-ellipse.svg"
                   alt=""
@@ -125,7 +300,9 @@ export default function HomePage() {
               </div>
 
               {/* Playbook */}
-              <div className="absolute lg:top-[15%] lg:left-[5%] xl:top-[20%] xl:left-[10%] top-[10%] left-[5%] z-10">
+              <div
+                className={`absolute lg:top-[15%] lg:left-[5%] xl:top-[20%] xl:left-[15%] top-[10%] left-[5%] z-10 ${floatAnimation}`}
+              >
                 <Image
                   src="/assets/playbook.svg"
                   alt="Playbook"
@@ -136,7 +313,9 @@ export default function HomePage() {
               </div>
 
               {/* Top Right Circle with Flower */}
-              <div className="absolute lg:top-[12%] lg:right-[15%] xl:top-[20%] xl:right-[35%] top-[5%] right-[5%] z-10">
+              <div
+                className={`absolute lg:top-[12%] lg:right-[15%] xl:top-[18%] xl:right-[35%] top-[5%] right-[5%] z-10 ${pulseSlowAnimation}`}
+              >
                 <Image
                   src="/assets/ellipse1_2.svg"
                   alt=""
@@ -145,7 +324,9 @@ export default function HomePage() {
                   className="opacity-100"
                 />
               </div>
-              <div className="absolute lg:top-[12%] lg:right-[15%] xl:top-[20%] xl:right-[35%] top-[5%] right-[5%] z-20">
+              <div
+                className={`absolute lg:top-[12%] lg:right-[15%] xl:top-[18%] xl:right-[35%] top-[5%] right-[5%] z-20 ${bobAnimation}`}
+              >
                 <div className="w-[200px] h-[200px] flex items-center justify-center">
                   <Image
                     src="/assets/flower1.svg"
@@ -157,12 +338,16 @@ export default function HomePage() {
               </div>
 
               {/* Cactus */}
-              <div className="absolute lg:top-[30%] lg:right-[2%] xl:top-[28%] xl:right-[25%] top-[28%] right-[20%] z-20">
+              <div
+                className={`absolute lg:top-[30%] lg:right-[2%] xl:top-[28%] xl:right-[25%] top-[28%] right-[20%] z-20 ${floatDelayAnimation}`}
+              >
                 <Image src="/assets/cactus.svg" alt="" width={50} height={50} />
               </div>
 
               {/* Middle Right Circle with Flower (Fern) */}
-              <div className="absolute lg:top-[45%] lg:right-[0%] xl:top-[50%] xl:right-[20%] top-[50%] right-[20%] z-10">
+              <div
+                className={`absolute lg:top-[45%] lg:right-[0%] xl:top-[50%] xl:right-[20%] top-[50%] right-[20%] z-10 ${pulseSlowAnimation}`}
+              >
                 <Image
                   src="/assets/ellipse3.svg"
                   alt=""
@@ -171,7 +356,9 @@ export default function HomePage() {
                   className="opacity-100"
                 />
               </div>
-              <div className="absolute lg:top-[48%] lg:right-[8%] xl:top-[53%] xl:right-[25%] top-[53%] right-[25%] z-10">
+              <div
+                className={`absolute lg:top-[48%] lg:right-[8%] xl:top-[53%] xl:right-[25%] top-[53%] right-[25%] z-10 ${bobDelayAnimation}`}
+              >
                 <Image
                   src="/assets/flower3.svg"
                   alt=""
@@ -181,7 +368,9 @@ export default function HomePage() {
               </div>
 
               {/* Bottom Left Circle with Flower */}
-              <div className="absolute lg:bottom-[25%] lg:left-[5%] xl:bottom-[20%] xl:left-[15%] bottom-[20%] left-[15%] z-10">
+              <div
+                className={`absolute lg:bottom-[25%] lg:left-[5%] xl:bottom-[20%] xl:left-[15%] bottom-[20%] left-[15%] z-10 ${pulseSlowAnimation}`}
+              >
                 <Image
                   src="/assets/ellipse1_2.svg"
                   alt=""
@@ -191,7 +380,9 @@ export default function HomePage() {
                 />
               </div>
 
-              <div className="absolute lg:bottom-[28%] lg:left-[15%] xl:bottom-[25%] xl:left-[20%] bottom-[25%] left-[20%] z-10">
+              <div
+                className={`absolute lg:bottom-[28%] lg:left-[15%] xl:bottom-[25%] xl:left-[20%] bottom-[25%] left-[20%] z-10 ${floatAnimation}`}
+              >
                 <Image
                   src="/assets/flower2.svg"
                   alt=""
@@ -201,7 +392,9 @@ export default function HomePage() {
               </div>
 
               {/* Cat Paw */}
-              <div className="absolute lg:bottom-[13%] lg:right-[30%] xl:bottom-[10%] xl:right-[40%] bottom-[10%] right-[40%] z-20">
+              <div
+                className={`absolute lg:bottom-[13%] lg:right-[30%] xl:bottom-[10%] xl:right-[40%] bottom-[10%] right-[40%] z-20 ${bobAnimation}`}
+              >
                 <Image
                   src="/assets/cat-paw.svg"
                   alt=""
@@ -212,31 +405,56 @@ export default function HomePage() {
               </div>
 
               {/* Stars */}
-              {/* <div className="absolute top-[3%] left-[28%] z-5">
+              <div
+                className={`absolute top-[15%] left-[15%] z-5 ${rotateSlowAnimation}`}
+              >
                 <Image
                   src="/assets/hero-star.svg"
                   alt=""
-                  width={28}
-                  height={28}
+                  width={30}
+                  height={30}
                 />
               </div>
-              <div className="absolute top-[48%] right-[2%] z-5">
-                <Image
-                  src="/assets/hero-star.svg"
-                  alt=""
-                  width={24}
-                  height={24}
-                />
+              <div
+                className={`absolute top-[48%] right-[20%] z-30 ${rotateSlowAnimation}`}
+              >
+                <Image src="/assets/star2.svg" alt="" width={35} height={35} />
               </div>
-              <div className="absolute bottom-[20%] left-[2%] z-5">
-                <Image
-                  src="/assets/hero-star.svg"
-                  alt=""
-                  width={26}
-                  height={26}
-                />
-              </div> */}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Moving Banner */}
+      <section
+        className="relative overflow-hidden lg:py-6 py-4 border-t border-b border-gray-600"
+        style={{
+          background:
+            "linear-gradient(93.75deg, #EFDBFF 30.42%, #ADC6FF 138.5%)",
+        }}
+      >
+        <div className="flex whitespace-nowrap animate-[scroll_25s_linear_infinite]">
+          {/* First set of messages */}
+          <div className="flex items-center gap-12 px-8 lg:text-base text-sm font-satoshi font-light text-gray-800">
+            <span>We&apos;re here to Help!</span>
+            <span>You&apos;re not alone in this!</span>
+            <span>We&apos;re with you every step!</span>
+            <span>You don&apos;t have to face it alone!</span>
+            <span>We&apos;re here to Help!</span>
+            <span>You&apos;re not alone in this!</span>
+            <span>We&apos;re with you every step!</span>
+            <span>You don&apos;t have to face it alone!</span>
+          </div>
+          {/* Duplicate set for seamless infinite scroll */}
+          <div className="flex items-center gap-12 px-8 lg:text-base text-sm font-satoshi font-light text-gray-800">
+            <span>We&apos;re here to Help!</span>
+            <span>You&apos;re not alone in this!</span>
+            <span>We&apos;re with you every step!</span>
+            <span>You don&apos;t have to face it alone!</span>
+            <span>We&apos;re here to Help!</span>
+            <span>You&apos;re not alone in this!</span>
+            <span>We&apos;re with you every step!</span>
+            <span>You don&apos;t have to face it alone!</span>
           </div>
         </div>
       </section>
