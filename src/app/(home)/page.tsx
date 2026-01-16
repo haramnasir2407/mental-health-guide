@@ -65,7 +65,7 @@ export default function HomePage() {
                 to its employees where their mental health needs are addressed.
               </p>
 
-              <div className="flex flex-col space-y-6 mt-2">
+              <div className="flex flex-row space-x-4 mt-2">
                 <Link
                   href="/docs"
                   className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-lg text-white font-medium transition-all hover:opacity-90 w-fit font-satoshi"
@@ -125,7 +125,7 @@ export default function HomePage() {
               </div>
 
               {/* Playbook */}
-              <div className="absolute lg:top-[15%] lg:left-[8%] xl:top-[20%] xl:left-[10%] top-[10%] left-[5%] z-10">
+              <div className="absolute lg:top-[15%] lg:left-[5%] xl:top-[20%] xl:left-[10%] top-[10%] left-[5%] z-10">
                 <Image
                   src="/assets/playbook.svg"
                   alt="Playbook"
@@ -136,7 +136,7 @@ export default function HomePage() {
               </div>
 
               {/* Top Right Circle with Flower */}
-              <div className="absolute lg:top-[12%] lg:right-[20%] xl:top-[20%] xl:right-[35%] top-[5%] right-[5%] z-10">
+              <div className="absolute lg:top-[12%] lg:right-[15%] xl:top-[20%] xl:right-[35%] top-[5%] right-[5%] z-10">
                 <Image
                   src="/assets/ellipse1_2.svg"
                   alt=""
@@ -145,7 +145,7 @@ export default function HomePage() {
                   className="opacity-100"
                 />
               </div>
-              <div className="absolute lg:top-[12%] lg:right-[20%] xl:top-[20%] xl:right-[35%] top-[5%] right-[5%] z-20">
+              <div className="absolute lg:top-[12%] lg:right-[15%] xl:top-[20%] xl:right-[35%] top-[5%] right-[5%] z-20">
                 <div className="w-[200px] h-[200px] flex items-center justify-center">
                   <Image
                     src="/assets/flower1.svg"
@@ -157,12 +157,12 @@ export default function HomePage() {
               </div>
 
               {/* Cactus */}
-              <div className="absolute lg:top-[30%] lg:right-[5%] xl:top-[28%] xl:right-[25%] top-[28%] right-[20%] z-20">
+              <div className="absolute lg:top-[30%] lg:right-[2%] xl:top-[28%] xl:right-[25%] top-[28%] right-[20%] z-20">
                 <Image src="/assets/cactus.svg" alt="" width={50} height={50} />
               </div>
 
               {/* Middle Right Circle with Flower (Fern) */}
-              <div className="absolute lg:top-[45%] lg:right-[5%] xl:top-[50%] xl:right-[20%] top-[50%] right-[20%] z-10">
+              <div className="absolute lg:top-[45%] lg:right-[0%] xl:top-[50%] xl:right-[20%] top-[50%] right-[20%] z-10">
                 <Image
                   src="/assets/ellipse3.svg"
                   alt=""
@@ -171,7 +171,7 @@ export default function HomePage() {
                   className="opacity-100"
                 />
               </div>
-              <div className="absolute lg:top-[48%] lg:right-[12%] xl:top-[53%] xl:right-[25%] top-[53%] right-[25%] z-10">
+              <div className="absolute lg:top-[48%] lg:right-[8%] xl:top-[53%] xl:right-[25%] top-[53%] right-[25%] z-10">
                 <Image
                   src="/assets/flower3.svg"
                   alt=""
@@ -181,7 +181,7 @@ export default function HomePage() {
               </div>
 
               {/* Bottom Left Circle with Flower */}
-              <div className="absolute lg:bottom-[22%] lg:left-[5%] xl:bottom-[20%] xl:left-[15%] bottom-[20%] left-[15%] z-10">
+              <div className="absolute lg:bottom-[25%] lg:left-[5%] xl:bottom-[20%] xl:left-[15%] bottom-[20%] left-[15%] z-10">
                 <Image
                   src="/assets/ellipse1_2.svg"
                   alt=""
@@ -191,7 +191,7 @@ export default function HomePage() {
                 />
               </div>
 
-              <div className="absolute lg:bottom-[25%] lg:left-[15%] xl:bottom-[22%] xl:left-[20%] bottom-[22%] left-[20%] z-10">
+              <div className="absolute lg:bottom-[28%] lg:left-[15%] xl:bottom-[25%] xl:left-[20%] bottom-[25%] left-[20%] z-10">
                 <Image
                   src="/assets/flower2.svg"
                   alt=""
@@ -201,7 +201,7 @@ export default function HomePage() {
               </div>
 
               {/* Cat Paw */}
-              <div className="absolute lg:bottom-[13%] lg:right-[35%] xl:bottom-[10%] xl:right-[40%] bottom-[10%] right-[40%] z-20">
+              <div className="absolute lg:bottom-[13%] lg:right-[30%] xl:bottom-[10%] xl:right-[40%] bottom-[10%] right-[40%] z-20">
                 <Image
                   src="/assets/cat-paw.svg"
                   alt=""
