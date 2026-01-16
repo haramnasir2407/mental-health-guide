@@ -45,3 +45,88 @@
     transform: translateX(-50%);
   }
 }
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes appearPaw1 {
+  0% {
+    opacity: 0;
+  }
+  1%,
+  80% {
+    opacity: 1;
+  }
+  81%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes appearPaw2 {
+  0%,
+  19% {
+    opacity: 0;
+  }
+  20%,
+  80% {
+    opacity: 1;
+  }
+  81%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes appearPaw3 {
+  0%,
+  39% {
+    opacity: 0;
+  }
+  40%,
+  80% {
+    opacity: 1;
+  }
+  81%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes appearPaw4 {
+  0%,
+  59% {
+    opacity: 0;
+  }
+  60%,
+  80% {
+    opacity: 1;
+  }
+  81%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes appearPaw5 {
+  0%,
+  79% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  81%,
+  100% {
+    opacity: 0;
+  }
+}
