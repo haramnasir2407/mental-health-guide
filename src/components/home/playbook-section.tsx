@@ -11,7 +11,7 @@ const tenorSans = Tenor_Sans({
 export function PlaybookSection() {
   return (
     <section
-      className="w-full py-12 lg:py-20 px-6 lg:px-8"
+      className="relative overflow-hidden px-6 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-20"
       style={{ background: "var(--Colors-Base-Geekblue-50, #F0F5FF)" }}
     >
       <div className="max-w-[1440px] mx-auto">

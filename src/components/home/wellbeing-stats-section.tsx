@@ -35,7 +35,7 @@ export function WellbeingStatsSection() {
 
   return (
     <section
-      className="relative py-16 lg:py-24 px-6 sm:px-8 lg:px-16"
+      className="relative overflow-hidden px-6 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-20"
       style={{
         background: "#F8F9FA",
       }}
