@@ -46,17 +46,17 @@ export function WellbeingStatsSection() {
           <div className="lg:hidden absolute -top-8 right-4">
             <div className="relative w-20 h-16">
               {/* Paw 3 (Top - appears last) */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 animate-[appearPaw3_5s_linear_infinite]">
+              <div className="absolute top-2 left-1/2 -translate-x-1/2 animate-[appearPaw3_5s_linear_infinite]">
                 <Image src="/assets/paw3.svg" alt="" width={24} height={24} />
               </div>
 
               {/* Paw 1 (Bottom Left - appears first) */}
-              <div className="absolute bottom-0 left-10 animate-[appearPaw1_5s_linear_infinite]">
+              <div className="absolute bottom-2 left-8 animate-[appearPaw1_5s_linear_infinite]">
                 <Image src="/assets/paw1.svg" alt="" width={24} height={24} />
               </div>
 
               {/* Paw 2 (Bottom Right - appears second) */}
-              <div className="absolute bottom-6 left-15 -translate-x-1/2 animate-[appearPaw2_5s_linear_infinite]">
+              <div className="absolute bottom-6 right-1 animate-[appearPaw2_5s_linear_infinite]">
                 <Image src="/assets/paw2.svg" alt="" width={24} height={24} />
               </div>
             </div>
@@ -139,7 +139,7 @@ export function WellbeingStatsSection() {
             </h2>
 
             <p
-              className="text-base lg:text-lg text-center lg:text-left leading-relaxed font-satoshi"
+              className="text-sm lg:text-base text-center lg:text-left leading-relaxed font-satoshi"
               style={{
                 color: "#6B7280",
                 fontWeight: 400,

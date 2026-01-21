@@ -29,6 +29,7 @@ export const ResourcesShowcase: React.FC = () => {
       title: "Follow guided Playbooks",
       description:
         "Choose personalised pathways designed for your specific needs. Each journey is tailored to match your goals, challenges, and comfort level. Instead of a one-size-fits-all approach, you get guidance that adapts to your pace and preferences.",
+      number: "02",
       illustration: "/assets/candle.svg",
       decorativeIcon: "/assets/heart.svg",
       arrowIcon: "/assets/slider-arrow.svg",
@@ -36,9 +37,9 @@ export const ResourcesShowcase: React.FC = () => {
       gradientEnd: "#ADC6FF",
     },
     {
-      title: "Tracl Wellbeing",
+      title: "Track Wellbeing",
       description:
-        "Monitor your progress and celebrate your growth over time. Track every step you take, no matter how small, and see how far you’ve come. With meaningful insights and gentle reminders, you stay connected to your journey.",
+        "Monitor your progress and celebrate your growth over time. Track every step you take, no matter how small, and see how far you've come. With meaningful insights and gentle reminders, you stay connected to your journey.",
       number: "03",
       illustration: "/assets/candle.svg",
       decorativeIcon: "/assets/heart.svg",
@@ -70,7 +71,7 @@ export const ResourcesShowcase: React.FC = () => {
                 fontWeight: 400,
               }}
             >
-              We got{" "}
+              We Got{" "}
               <span className="relative inline-block">
                 You All{""}
                 <Image
@@ -92,22 +93,21 @@ export const ResourcesShowcase: React.FC = () => {
                 fontWeight: 400,
               }}
             >
-              We got{" "}
+              We Got You All{" "}
               <span className="relative inline-block">
-                All{" "}
+                Covered
                 <Image
                   src="/assets/underline.svg"
                   alt=""
                   width={150}
                   height={5}
-                  className="absolute -bottom-1 left-10"
+                  className="absolute -bottom-1 left-5"
                 />
-              </span>{" "}
-              Covered
+              </span>
             </h2>
 
             <p
-              className="text-base lg:text-lg text-center lg:text-left leading-relaxed font-satoshi"
+              className="hidden lg:block text-base lg:text-lg text-center lg:text-left leading-relaxed font-satoshi"
               style={{
                 color: "#6B7280",
                 fontWeight: 400,

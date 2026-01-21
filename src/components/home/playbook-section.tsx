@@ -18,7 +18,7 @@ export function PlaybookSection() {
         {/* Mobile Heading - Centered */}
         <div className="lg:hidden text-center mb-8">
           <h2
-            className={`text-2xl sm:text-3xl leading-tight ${tenorSans.className}`}
+            className={`text-3xl sm:text-4xl leading-tight ${tenorSans.className}`}
           >
             What You Will{" "}
             <span className="relative inline-block">
@@ -87,7 +87,7 @@ export function PlaybookSection() {
           {/* Content */}
           <div className="flex flex-col gap-6 lg:gap-8">
             {/* Description */}
-            <p className="text-gray-700 text-xs sm:text-sm lg:text-lg leading-relaxed font-satoshi text-center lg:text-left px-4 lg:px-0">
+            <p className="text-gray-700 text-sm lg:text-base leading-relaxed font-satoshi text-center lg:text-left px-4 lg:px-0">
               Mental wellbeing is a crucial predictor of general wellbeing and
               directly impacts their workplace efficacy, motivation and job
               satisfaction levels. The following statistics emphasize the
@@ -95,7 +95,7 @@ export function PlaybookSection() {
             </p>
 
             {/* Horizontal Separator */}
-            <hr className="lg:hidden border-t border-gray-400 w-full" />
+            <hr className="lg:hidden border-t border-gray-600 w-full" />
 
             {/* Bullet Points */}
             <div className="flex flex-col gap-8 lg:gap-6 font-satoshi">
