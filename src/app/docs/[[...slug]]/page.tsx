@@ -10,6 +10,13 @@ import { getMDXComponents } from "@/mdx-components";
 import type { Metadata } from "next";
 import { createRelativeLink } from "fumadocs-ui/mdx";
 import { LLMCopyButton, ViewOptions } from "@/components/ai/page-actions";
+import { Tenor_Sans } from "next/font/google";
+
+const tenorSans = Tenor_Sans({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
   const params = await props.params;
@@ -25,19 +32,35 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
 
   return (
     <DocsPage toc={page.data.toc} full={page.data.full}>
-      <DocsTitle>{page.data.title}</DocsTitle>
-      <DocsDescription className="mb-0">
+      <DocsTitle 
+        className={`${tenorSans.className} text-2xl sm:text-3xl lg:text-4xl leading-[1.1] mb-6`}
+        style={{
+          fontWeight: 400,
+          color: "#000000",
+        }}
+      >
+        {page.data.title}
+      </DocsTitle>
+      <DocsDescription className="mb-0 font-satoshi" style={{
+        fontWeight: 400,
+        color: "#1F2937",
+        lineHeight: "1.5",
+      }}>
         {page.data.description}
       </DocsDescription>
-      <div className="flex flex-row gap-2 items-center border-b pb-6">
+      {/* <div className="flex flex-row gap-2 items-center border-b pb-6">
         <LLMCopyButton markdownUrl={`${page.url}.mdx`} />
         <ViewOptions
           markdownUrl={`${page.url}.mdx`}
           // update it to match your repo
           githubUrl={`https://github.com/${gitConfig.user}/${gitConfig.repo}/blob/${gitConfig.branch}/docs/content/docs/${page.path}`}
         />
-      </div>
-      <DocsBody>
+      </div> */}
+      <DocsBody className="font-satoshi" style={{
+        fontWeight: 400,
+        color: "#1F2937",
+        lineHeight: "1.5",
+      }}>
         <MDX
           components={getMDXComponents({
             // this allows you to link to other pages with relative file paths
