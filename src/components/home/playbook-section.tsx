@@ -11,6 +11,7 @@ const tenorSans = Tenor_Sans({
 export function PlaybookSection() {
   return (
     <section
+      id="about"
       className="relative overflow-hidden px-6 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-20"
       style={{ background: "var(--Colors-Base-Geekblue-50, #F0F5FF)" }}
     >
