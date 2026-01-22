@@ -19,7 +19,7 @@ const bobDelayAnimation = "animate-[bob_4s_ease-in-out_infinite_1s]";
 export function HeroSection() {
   return (
     <section
-      className="relative overflow-hidden min-h-screen px-6 pt-10 pb-8 sm:px-8 sm:py-16"
+      className="relative overflow-hidden px-6 pt-10 pb-8 sm:px-8 sm:py-16 lg:px-16 lg:py-18 border-t border-gray-950"
       style={{
         background: "linear-gradient(116.19deg, #FFF0F6 0%, #D6E4FF 100%)",
       }}
@@ -30,7 +30,7 @@ export function HeroSection() {
           <div className="relative flex flex-col justify-center space-y-6 lg:space-y-8">
             {/* Decorative Border */}
             <div className="hidden lg:block absolute -top-5 right-20 w-60 h-50 border-t border-r border-r-gray-950 border-t-gray-950 opacity-100"></div>
-            
+
             {/* Decorative Border mobile */}
             <div className="lg:hidden absolute -top-6 left-1 w-30 h-30 border-t border-l border-l-gray-950 border-t-gray-950 opacity-100"></div>
 
@@ -244,7 +244,7 @@ export function HeroSection() {
               </Link>
 
               {/* Powered by Carbonteq - Desktop aligned at border end */}
-              <div className="hidden lg:flex items-center gap-2">
+              <div className="hidden lg:flex items-center gap-2 ml-40">
                 <span
                   className="text-xs lg:text-sm font-satoshi"
                   style={{
@@ -258,7 +258,6 @@ export function HeroSection() {
                   alt="Carbonteq"
                   width={110}
                   height={22}
-                  className="opacity-60"
                 />
               </div>
 
@@ -277,7 +276,6 @@ export function HeroSection() {
                   alt="Carbonteq"
                   width={80}
                   height={18}
-                  className="opacity-60"
                 />
               </div>
 
