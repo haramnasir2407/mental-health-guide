@@ -2,6 +2,15 @@
 @import "fumadocs-ui/css/neutral.css";
 @import "fumadocs-ui/css/preset.css";
 
+/* Force light mode - disable dark mode */
+html {
+  color-scheme: light !important;
+}
+
+html.dark {
+  color-scheme: light !important;
+}
+
 @layer utilities {
   .font-satoshi {
     font-family: "Satoshi", sans-serif;

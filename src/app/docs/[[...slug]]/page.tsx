@@ -5,7 +5,7 @@ import {
   DocsPage,
   DocsTitle,
 } from "fumadocs-ui/layouts/docs/page";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getMDXComponents } from "@/mdx-components";
 import type { Metadata } from "next";
 import { createRelativeLink } from "fumadocs-ui/mdx";
@@ -20,6 +20,12 @@ const tenorSans = Tenor_Sans({
 
 export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
   const params = await props.params;
+  
+  // Redirect /docs to /docs/getting-started/introduction
+  if (!params.slug || params.slug.length === 0) {
+    redirect("/docs/getting-started/introduction");
+  }
+  
   const page = source.getPage(params.slug);
   if (!page) notFound();
 
@@ -48,14 +54,6 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
       }}>
         {page.data.description}
       </DocsDescription>
-      {/* <div className="flex flex-row gap-2 items-center border-b pb-6">
-        <LLMCopyButton markdownUrl={`${page.url}.mdx`} />
-        <ViewOptions
-          markdownUrl={`${page.url}.mdx`}
-          // update it to match your repo
-          githubUrl={`https://github.com/${gitConfig.user}/${gitConfig.repo}/blob/${gitConfig.branch}/docs/content/docs/${page.path}`}
-        />
-      </div> */}
       <DocsBody className="font-satoshi" style={{
         fontWeight: 400,
         color: "#1F2937",

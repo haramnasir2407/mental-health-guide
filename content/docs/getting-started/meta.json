@@ -2,7 +2,7 @@
     "title": "Getting Started",
     "icon": "home",
     "pages": [
-        "index",
+        "introduction",
         "self-awareness"
     ]
 }
