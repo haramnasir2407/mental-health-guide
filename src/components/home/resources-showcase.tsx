@@ -60,8 +60,8 @@ export const ResourcesShowcase: React.FC = () => {
         background: "#F8F9FA",
       }}
     >
-      <div className="max-w-[1440px] mx-auto">
-        <div className="max-w-[1312px] mx-auto space-y-8 lg:space-y-12">
+      <div className="max-w-[1440px] mx-auto ">
+        <div className="space-y-8 lg:space-y-12">
           {/* Desktop Version - Left Aligned */}
           <div className="space-y-4">
             <h2

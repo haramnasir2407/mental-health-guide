@@ -20,7 +20,6 @@ export const CTASection: React.FC = () => {
       }}
     >
       <div className="max-w-[1440px] mx-auto">
-        <div className="max-w-[300px] lg:max-w-[1312px] mx-auto">
           <div className="text-center space-y-6 lg:flex lg:items-center lg:justify-between lg:gap-10 lg:text-left lg:space-y-0">
             <div className="space-y-6 lg:space-y-3">
               {/* Heading */}
@@ -69,7 +68,6 @@ export const CTASection: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };

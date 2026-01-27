@@ -19,11 +19,11 @@ export const ExpertGuidanceSection: React.FC = () => {
       }}
     >
       <div className="max-w-[1440px] mx-auto">
-        <div className="max-w-[400px] lg:max-w-[1312px] mx-auto space-y-8">
+        <div className="space-y-8">
           {/* Header */}
           <div className="text-center lg:text-left space-y-3">
             <h2
-              className={`text-2xl sm:text-3xl lg:text-4xl leading-tight ${tenorSans.className}`}
+              className={`text-3xl sm:text-4xl leading-tight ${tenorSans.className}`}
               style={{
                 color: "#1F2937",
                 fontWeight: 400,
@@ -54,7 +54,7 @@ export const ExpertGuidanceSection: React.FC = () => {
           {/* Mobile: Stacked Layout, Desktop: Grid Layout */}
           <div className="flex flex-col lg:flex-row lg:gap-2 lg:items-center space-y-8 lg:space-y-0">
             {/* Profile Card - Left on Desktop */}
-            <div className="relative w-full max-w-[344px] mx-auto lg:mx-0">
+            <div className="relative w-full max-w-[300px] mx-auto lg:mx-0">
               {/* Frame Background */}
               <div className="relative w-full h-[300px] lg:h-[350px]">
                 <Image
