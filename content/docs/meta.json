@@ -1,7 +1,3 @@
 {
-  "pages": [
-    "getting-started",
-    "mental-health-topics",
-    "support"
-  ]
+  "pages": ["getting-started", "mental-health-topics", "support"]
 }

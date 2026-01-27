@@ -1,7 +1,5 @@
 {
-    "title": "Support",
-    "icon": "ai:AiOutlineUsergroupDelete",
-    "pages": [
-        "seek-professional-support"
-    ]
+  "title": "Support",
+  "icon": "ai:AiOutlineUsergroupDelete",
+  "pages": ["seek-professional-support"]
 }

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 interface CustomTabsProps {
   items: Array<{ label: string; icon: string }>;
@@ -9,21 +9,21 @@ interface CustomTabsProps {
 }
 
 export const CustomTabs = ({ items, children }: CustomTabsProps) => {
-  const [activeTab, setActiveTab] = React.useState(items[0]?.label || '');
+  const [activeTab, setActiveTab] = React.useState(items[0]?.label || "");
 
   return (
     <div className="my-8">
-      <div className="flex gap-4 mb-6">
+      <div className="flex gap-0 mb-6">
         {items.map((item) => (
           <button
             key={item.label}
             onClick={() => setActiveTab(item.label)}
-            className={`flex items-center gap-2 px-4 py-2 rounded border transition-all ${
+            className={`flex items-center gap-2 px-4 h-10 rounded border transition-all ${
               activeTab === item.label
-                ? 'bg-[#F3E8FF] border-[#1A1A1A]'
-                : 'bg-white border-[#E5E7EB]'
+                ? "bg-linear-to-br from-[#FFF0F6] to-[#D6E4FF] border-[#1A1A1A]"
+                : "bg-white border-[#E5E7EB]"
             }`}
-            style={{ fontSize: '16px', fontWeight: 400 }}
+            style={{ fontSize: "16px", fontWeight: 400 }}
           >
             <Image src={item.icon} alt="" width={18} height={18} />
             <span>{item.label}</span>

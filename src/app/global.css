@@ -17,7 +17,11 @@ a[data-active="true"],
 a[aria-current="page"],
 [data-active="true"],
 button[data-active="true"] {
-  background: linear-gradient(93.75deg, #EFDBFF 30.42%, #ADC6FF 138.5%) !important;
+  background: linear-gradient(
+    93.75deg,
+    #efdbff 30.42%,
+    #adc6ff 138.5%
+  ) !important;
 }
 
 @layer utilities {

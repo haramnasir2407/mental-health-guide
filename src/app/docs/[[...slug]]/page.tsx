@@ -20,12 +20,12 @@ const tenorSans = Tenor_Sans({
 
 export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
   const params = await props.params;
-  
+
   // Redirect /docs to /docs/getting-started/introduction
   if (!params.slug || params.slug.length === 0) {
     redirect("/docs/getting-started/introduction");
   }
-  
+
   const page = source.getPage(params.slug);
   if (!page) notFound();
 
@@ -38,7 +38,7 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
 
   return (
     <DocsPage toc={page.data.toc} full={page.data.full}>
-      <DocsTitle 
+      <DocsTitle
         className={`${tenorSans.className} text-2xl sm:text-3xl lg:text-4xl leading-[1.1] mb-6`}
         style={{
           fontWeight: 400,
@@ -47,18 +47,24 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
       >
         {page.data.title}
       </DocsTitle>
-      <DocsDescription className="mb-0 font-satoshi" style={{
-        fontWeight: 400,
-        color: "#1F2937",
-        lineHeight: "1.5",
-      }}>
+      <DocsDescription
+        className="mb-0 font-satoshi"
+        style={{
+          fontWeight: 400,
+          color: "#1F2937",
+          lineHeight: "1.5",
+        }}
+      >
         {page.data.description}
       </DocsDescription>
-      <DocsBody className="font-satoshi" style={{
-        fontWeight: 400,
-        color: "#1F2937",
-        lineHeight: "1.5",
-      }}>
+      <DocsBody
+        className="font-satoshi"
+        style={{
+          fontWeight: 400,
+          color: "#1F2937",
+          lineHeight: "1.5",
+        }}
+      >
         <MDX
           components={getMDXComponents({
             // this allows you to link to other pages with relative file paths

@@ -1,9 +1,9 @@
 {
-    "title": "Mental Health Topics",
-    "icon": "io5:IoHeartOutline",
-    "pages": [
-        "managing-workplace-stress",
-        "building-workplace-resilience",
-        "finding-meaning-in-work"
-    ]
+  "title": "Mental Health Topics",
+  "icon": "io5:IoHeartOutline",
+  "pages": [
+    "managing-workplace-stress",
+    "building-workplace-resilience",
+    "finding-meaning-in-work"
+  ]
 }

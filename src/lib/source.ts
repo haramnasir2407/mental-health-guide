@@ -1,11 +1,10 @@
 import { docs } from "fumadocs-mdx:collections/server";
 import { type InferPageType, loader } from "fumadocs-core/source";
-import { icons } from 'lucide-react';
-import * as AIIcons from 'react-icons/ai';
-import * as Io5Icons from 'react-icons/io5';
-import { createElement } from 'react';
+import { icons } from "lucide-react";
+import * as AIIcons from "react-icons/ai";
+import * as Io5Icons from "react-icons/io5";
+import { createElement } from "react";
 import { lucideIconsPlugin } from "fumadocs-core/source/lucide-icons";
-
 
 // See https://fumadocs.dev/docs/headless/source-api for more info
 export const source = loader({
@@ -18,21 +17,21 @@ export const source = loader({
     }
 
     // Handle prefixed icons: "lucide:Home", "iconoir:User", "fa:FaHome"
-    if (icon.includes(':')) {
-      const [library, iconName] = icon.split(':');
-      
+    if (icon.includes(":")) {
+      const [library, iconName] = icon.split(":");
+
       switch (library) {
-        case 'lucide':
+        case "lucide":
           if (iconName in icons) {
             return createElement(icons[iconName as keyof typeof icons]);
           }
           break;
-        case 'ai':
+        case "ai":
           if (iconName in AIIcons) {
             return createElement(AIIcons[iconName as keyof typeof AIIcons]);
           }
           break;
-        case 'io5':
+        case "io5":
           if (iconName in Io5Icons) {
             return createElement(Io5Icons[iconName as keyof typeof Io5Icons]);
           }

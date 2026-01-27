@@ -20,37 +20,37 @@ export const ExpertGuidanceSection: React.FC = () => {
     >
       <div className="max-w-[1440px] mx-auto">
         <div className="max-w-[400px] lg:max-w-[1312px] mx-auto space-y-8">
-        {/* Header */}
-        <div className="text-center lg:text-left space-y-3">
-          <h2
-            className={`text-2xl sm:text-3xl lg:text-4xl leading-tight ${tenorSans.className}`}
-            style={{
-              color: "#1F2937",
-              fontWeight: 400,
-            }}
-          >
-            Expert Guidance You{" "}
-            <span className="relative inline-block">
-              Can Trust
-              <Image
-                src="/assets/underline.svg"
-                alt=""
-                width={100}
-                height={5}
-                className="absolute -bottom-1 left-2"
-              />
-            </span>
-          </h2>
-          <p
-            className="text-sm sm:text-base font-satoshi"
-            style={{
-              color: "#6B7280",
-              fontWeight: 400,
-            }}
-          >
-            Collaborating with leading mental health professionals.
-          </p>
-        </div>
+          {/* Header */}
+          <div className="text-center lg:text-left space-y-3">
+            <h2
+              className={`text-2xl sm:text-3xl lg:text-4xl leading-tight ${tenorSans.className}`}
+              style={{
+                color: "#1F2937",
+                fontWeight: 400,
+              }}
+            >
+              Expert Guidance You{" "}
+              <span className="relative inline-block">
+                Can Trust
+                <Image
+                  src="/assets/underline.svg"
+                  alt=""
+                  width={100}
+                  height={5}
+                  className="absolute -bottom-1 left-2"
+                />
+              </span>
+            </h2>
+            <p
+              className="text-sm sm:text-base font-satoshi"
+              style={{
+                color: "#6B7280",
+                fontWeight: 400,
+              }}
+            >
+              Collaborating with leading mental health professionals.
+            </p>
+          </div>
           {/* Mobile: Stacked Layout, Desktop: Grid Layout */}
           <div className="flex flex-col lg:flex-row lg:gap-2 lg:items-center space-y-8 lg:space-y-0">
             {/* Profile Card - Left on Desktop */}
