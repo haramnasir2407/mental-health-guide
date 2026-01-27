@@ -1,6 +1,8 @@
 import defaultMdxComponents from "fumadocs-ui/mdx";
+import * as TabsComponents from "fumadocs-ui/components/tabs";
 import type { MDXComponents } from "mdx/types";
 import { Tenor_Sans } from "next/font/google";
+import { CustomTabs, Tab as CustomTab } from "@/components/custom-tabs";
 
 const tenorSans = Tenor_Sans({
   weight: "400",
@@ -39,6 +41,9 @@ const CheckIcon = () => (
 export function getMDXComponents(components?: MDXComponents): MDXComponents {
   return {
     ...defaultMdxComponents,
+    ...TabsComponents,
+    CustomTabs,
+    Tab: CustomTab,
     // Customize default markdown elements
     h1: (props) => (
       <h1 className={`text-2xl lg:text-3xl leading-tight ${tenorSans.className}`} style={{
@@ -48,6 +53,12 @@ export function getMDXComponents(components?: MDXComponents): MDXComponents {
     ),
     h2: (props) => (
       <h2 className="text-2xl lg:text-3xl leading-tight font-satoshi mt-4" style={{
+        color: "#1F2937",
+        fontWeight: 400,
+      }} {...props} />
+    ),
+    h3: (props) => (
+      <h3 className="text-xl lg:text-2xl leading-tight font-satoshi mt-4" style={{
         color: "#1F2937",
         fontWeight: 400,
       }} {...props} />

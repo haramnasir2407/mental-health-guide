@@ -11,6 +11,15 @@ html.dark {
   color-scheme: light !important;
 }
 
+/* Custom active state styling for sidebar  */
+/* Broad selectors to catch all sidebar active states */
+a[data-active="true"],
+a[aria-current="page"],
+[data-active="true"],
+button[data-active="true"] {
+  background: linear-gradient(93.75deg, #EFDBFF 30.42%, #ADC6FF 138.5%) !important;
+}
+
 @layer utilities {
   .font-satoshi {
     font-family: "Satoshi", sans-serif;

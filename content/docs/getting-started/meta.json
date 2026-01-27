@@ -1,6 +1,6 @@
 {
     "title": "Getting Started",
-    "icon": "home",
+    "icon": "ai:AiOutlineHome",
     "pages": [
         "introduction",
         "self-awareness"
