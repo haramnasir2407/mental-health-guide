@@ -18,6 +18,11 @@ export function baseOptions(): BaseLayoutProps {
         url: "/docs",
         active: "nested-url",
       },
+      {
+        text: "Contact Us",
+        url: "/docs/support/seek-professional-support",
+        active: "nested-url",
+      }
     ],
     themeSwitch: {
       enabled: false,
