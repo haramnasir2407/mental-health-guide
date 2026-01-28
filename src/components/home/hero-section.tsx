@@ -19,17 +19,17 @@ const bobDelayAnimation = "animate-[bob_4s_ease-in-out_infinite_1s]";
 export function HeroSection() {
   return (
     <section
-      className="relative overflow-hidden px-6 pt-10 pb-8 sm:px-8 sm:py-16 lg:px-12 lg:py-14 xl:px-16 xl:py-18 border-t border-gray-950"
+      className="relative overflow-hidden px-6 pt-10 pb-8 sm:px-8 sm:py-16 lg:px-12 lg:py-14 xl:px-14 2xl:px-16 xl:py-16 2xl:py-18 border-t border-gray-950"
       style={{
         background: "linear-gradient(116.19deg, #FFF0F6 0%, #D6E4FF 100%)",
       }}
     >
       <div className="max-w-[1440px] mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-16 items-center min-h-[calc(100vh-160px)]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12 2xl:gap-16 items-center min-h-[calc(100vh-160px)]">
           {/* Left Content */}
-          <div className="relative flex flex-col justify-center space-y-6 lg:space-y-6 xl:space-y-8">
+          <div className="relative flex flex-col justify-center space-y-6 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
             {/* Decorative Border */}
-            <div className="hidden lg:block absolute lg:-top-3 xl:-top-5 lg:right-10 xl:right-20 lg:w-48 xl:w-60 h-50 border-t border-r border-r-gray-950 border-t-gray-950 opacity-100"></div>
+            <div className="hidden lg:block absolute lg:-top-3 xl:-top-4 2xl:-top-5 lg:right-10 xl:right-14 2xl:right-20 lg:w-48 xl:w-52 2xl:w-60 h-50 border-t border-r border-r-gray-950 border-t-gray-950 opacity-100"></div>
 
             {/* Decorative Border mobile */}
             <div className="lg:hidden absolute -top-6 left-1 w-30 h-30 border-t border-l border-l-gray-950 border-t-gray-950 opacity-100"></div>
@@ -55,7 +55,7 @@ export function HeroSection() {
             </h1>
 
             <h1
-              className={`hidden lg:block text-4xl sm:text-5xl lg:text-6xl xl:text-8xl leading-[1.1] ${tenorSans.className}`}
+              className={`hidden lg:block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl leading-[1.1] ${tenorSans.className}`}
               style={{
                 fontWeight: 400,
                 color: "#000000",
@@ -210,7 +210,7 @@ export function HeroSection() {
             </div>
 
             <p
-              className="text-sm lg:text-sm xl:text-base leading-relaxed lg:max-w-md xl:max-w-lg font-satoshi text-center lg:text-left"
+              className="text-sm lg:text-sm xl:text-[15px] 2xl:text-base leading-relaxed lg:max-w-md xl:max-w-[480px] 2xl:max-w-lg font-satoshi text-center lg:text-left"
               style={{
                 color: "#6B7280",
                 fontWeight: 400,
@@ -224,10 +224,10 @@ export function HeroSection() {
               to its employees where their mental health needs are addressed.
             </p>
 
-            <div className="flex flex-row items-center space-x-2 lg:space-x-3 xl:space-x-4">
+            <div className="flex flex-row items-center space-x-2 lg:space-x-3 xl:space-x-2 2xl:space-x-4">
               <Link
                 href="/docs"
-                className="group inline-flex items-center justify-center gap-2 px-3 lg:px-6 xl:px-8 py-2 lg:py-3 xl:py-3.5 rounded-md sm:rounded-lg text-white font-base transition-all hover:opacity-90 w-fit font-satoshi text-xs lg:text-base xl:text-lg hover:bg-[#7A39B8]"
+                className="group inline-flex items-center justify-center gap-2 px-3 lg:px-6 xl:px-6 2xl:px-8 py-2 lg:py-3 xl:py-2.5 2xl:py-3.5 rounded-md sm:rounded-lg text-white font-base transition-all hover:opacity-90 w-fit font-satoshi text-xs lg:text-base xl:text-sm 2xl:text-lg hover:bg-[#7A39B8] whitespace-nowrap"
                 style={{
                   background: "#9254DE",
                 }}
@@ -244,7 +244,7 @@ export function HeroSection() {
               </Link>
 
               {/* Powered by Carbonteq - Desktop aligned at border end */}
-              <div className="hidden lg:flex items-center gap-2 lg:ml-8 xl:ml-40">
+              <div className="hidden lg:flex items-center gap-2 lg:ml-4 xl:ml-6 2xl:ml-40 whitespace-nowrap">
                 <span
                   className="text-xs lg:text-sm font-satoshi"
                   style={{
@@ -290,10 +290,10 @@ export function HeroSection() {
           </div>
 
           {/* Right Decorative Elements */}
-          <div className="relative lg:h-[550px] xl:h-[700px] hidden lg:block">
+          <div className="relative lg:h-[550px] xl:h-[600px] 2xl:h-[700px] hidden lg:block">
             {/* Gradient Ellipse Background */}
             <div
-              className={`w-full h-full absolute lg:top-[48%] lg:left-[48%] xl:top-1/2 xl:left-1/2 -translate-x-1/2 -translate-y-1/2 lg:scale-100 xl:scale-110 ${pulseSlowAnimation}`}
+              className={`w-full h-full absolute lg:top-[48%] lg:left-[48%] xl:top-[48%] xl:left-[48%] 2xl:top-1/2 2xl:left-1/2 -translate-x-1/2 -translate-y-1/2 lg:scale-100 xl:scale-105 2xl:scale-110 ${pulseSlowAnimation}`}
             >
               <Image
                 src="/assets/gradient-ellipse.svg"
@@ -357,23 +357,23 @@ export function HeroSection() {
 
             {/* Middle Right Circle with Flower (Fern) */}
             <div
-              className={`absolute lg:top-[48%] lg:right-[5%] xl:top-[50%] xl:right-[22%] z-10 ${pulseSlowAnimation}`}
+              className={`absolute lg:top-[50%] lg:right-[8%] xl:top-[50%] xl:right-[16%] 2xl:top-[50%] 2xl:right-[20%] z-10 ${pulseSlowAnimation}`}
             >
               <Image
                 src="/assets/ellipse3.svg"
                 alt=""
-                className="lg:w-[150px] lg:h-[150px] xl:w-[160px] xl:h-[180px] opacity-100"
+                className="lg:w-[150px] lg:h-[150px] xl:w-[165px] xl:h-[165px] 2xl:w-[180px] 2xl:h-[180px] opacity-100"
                 width={180}
                 height={180}
               />
             </div>
             <div
-              className={`absolute lg:top-[50%] lg:right-[11%] xl:top-[53%] xl:right-[27%] z-10 ${bobDelayAnimation}`}
+              className={`absolute lg:top-[52%] lg:right-[14%] xl:top-[52%] xl:right-[21%] 2xl:top-[53%] 2xl:right-[25%] z-10 ${bobDelayAnimation}`}
             >
               <Image
                 src="/assets/flower3.svg"
                 alt=""
-                className="lg:w-[80px] lg:h-[120px] xl:w-[90px] xl:h-[150px]"
+                className="lg:w-[80px] lg:h-[120px] xl:w-[90px] xl:h-[135px] 2xl:w-[100px] 2xl:h-[150px]"
                 width={100}
                 height={150}
               />
@@ -381,24 +381,24 @@ export function HeroSection() {
 
             {/* Bottom Left Circle with Flower */}
             <div
-              className={`absolute lg:bottom-[25%] lg:left-[15%] xl:bottom-[25%] xl:left-[15%] z-10 ${pulseSlowAnimation}`}
+              className={`absolute lg:bottom-[22%] lg:left-[10%] xl:bottom-[22%] xl:left-[12%] 2xl:bottom-[20%] 2xl:left-[15%] z-10 ${pulseSlowAnimation}`}
             >
               <Image
                 src="/assets/ellipse1_2.svg"
                 alt=""
-                className="lg:w-[150px] lg:h-[160px] xl:w-[160px] xl:h-[180px] opacity-100"
+                className="lg:w-[160px] lg:h-[160px] xl:w-[175px] xl:h-[170px] 2xl:w-[200px] 2xl:h-[180px] opacity-100"
                 width={200}
                 height={180}
               />
             </div>
 
             <div
-              className={`absolute lg:bottom-[28%] lg:left-[20%] xl:bottom-[28%] xl:left-[20%] z-10 ${floatAnimation}`}
+              className={`absolute lg:bottom-[25%] lg:left-[18%] xl:bottom-[25%] xl:left-[18%] 2xl:bottom-[25%] 2xl:left-[20%] z-10 ${floatAnimation}`}
             >
               <Image
                 src="/assets/flower2.svg"
                 alt=""
-                className="lg:w-[105px] lg:h-[105px] xl:w-[120px] xl:h-[130px]"
+                className="lg:w-[105px] lg:h-[105px] xl:w-[115px] xl:h-[115px] 2xl:w-[130px] 2xl:h-[130px]"
                 width={130}
                 height={130}
               />
@@ -406,12 +406,12 @@ export function HeroSection() {
 
             {/* Cat Paw */}
             <div
-              className={`absolute lg:bottom-[12%] lg:right-[32%] xl:bottom-[10%] xl:right-[43%] z-20 ${bobAnimation}`}
+              className={`absolute lg:bottom-[12%] lg:right-[34%] xl:bottom-[12%] xl:right-[38%] 2xl:bottom-[10%] 2xl:right-[40%] z-20 ${bobAnimation}`}
             >
               <Image
                 src="/assets/cat-paw.svg"
                 alt=""
-                className="lg:w-[85px] lg:h-[85px] xl:w-[110px] xl:h-[110px] drop-shadow-lg"
+                className="lg:w-[85px] lg:h-[85px] xl:w-[95px] xl:h-[95px] 2xl:w-[110px] 2xl:h-[110px] drop-shadow-lg"
                 width={110}
                 height={110}
               />
@@ -419,23 +419,23 @@ export function HeroSection() {
 
             {/* Stars */}
             <div
-              className={`absolute lg:top-[18%] lg:left-[18%] xl:top-[20%] xl:left-[15%] z-5 ${rotateSlowAnimation}`}
+              className={`absolute lg:top-[18%] lg:left-[18%] xl:top-[18%] xl:left-[16%] 2xl:top-[15%] 2xl:left-[15%] z-5 ${rotateSlowAnimation}`}
             >
               <Image
                 src="/assets/hero-star.svg"
                 alt=""
-                className="lg:w-[24px] lg:h-[24px] xl:w-[30px] xl:h-[30px]"
+                className="lg:w-[24px] lg:h-[24px] xl:w-[27px] xl:h-[27px] 2xl:w-[30px] 2xl:h-[30px]"
                 width={30}
                 height={30}
               />
             </div>
             <div
-              className={`absolute lg:top-[45%] lg:right-[10%] xl:top-[48%] xl:right-[20%] z-30 ${rotateSlowAnimation}`}
+              className={`absolute lg:top-[48%] lg:right-[16%] xl:top-[48%] xl:right-[18%] 2xl:top-[48%] 2xl:right-[20%] z-30 ${rotateSlowAnimation}`}
             >
               <Image 
                 src="/assets/star2.svg" 
                 alt="" 
-                className="lg:w-[28px] lg:h-[28px] xl:w-[35px] xl:h-[35px]"
+                className="lg:w-[28px] lg:h-[28px] xl:w-[31px] xl:h-[31px] 2xl:w-[35px] 2xl:h-[35px]"
                 width={35} 
                 height={35} 
               />
