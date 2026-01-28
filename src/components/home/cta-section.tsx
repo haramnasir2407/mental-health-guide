@@ -20,54 +20,54 @@ export const CTASection: React.FC = () => {
       }}
     >
       <div className="max-w-[1440px] mx-auto">
-          <div className="text-center space-y-6 lg:flex lg:items-center lg:justify-between lg:gap-10 lg:text-left lg:space-y-0">
-            <div className="space-y-6 lg:space-y-3">
-              {/* Heading */}
-              <h2
-                className={`text-3xl lg:text-4xl leading-tight ${tenorSans.className}`}
-                style={{
-                  color: "#1F2937",
-                  fontWeight: 400,
-                }}
-              >
-                Ready to start your journey?
-              </h2>
+        <div className="text-center space-y-6 lg:flex lg:items-center lg:justify-between lg:gap-10 lg:text-left lg:space-y-0">
+          <div className="space-y-6 lg:space-y-3">
+            {/* Heading */}
+            <h2
+              className={`text-3xl lg:text-4xl leading-tight ${tenorSans.className}`}
+              style={{
+                color: "#1F2937",
+                fontWeight: 400,
+              }}
+            >
+              Ready to start your journey?
+            </h2>
 
-              {/* Subtext */}
-              <p
-                className="text-sm sm:text-base lg:text-lg font-satoshi max-w-[350px] mx-auto lg:mx-0 lg:max-w-[520px]"
-                style={{
-                  color: "#4B5563",
-                  fontWeight: 400,
-                  lineHeight: "1.75",
-                }}
-              >
-                Join thousands who&apos;ve found support, clarity, and peace.
-              </p>
-            </div>
+            {/* Subtext */}
+            <p
+              className="text-sm sm:text-base lg:text-lg font-satoshi max-w-[350px] mx-auto lg:mx-0 lg:max-w-[520px]"
+              style={{
+                color: "#4B5563",
+                fontWeight: 400,
+                lineHeight: "1.75",
+              }}
+            >
+              Join thousands who&apos;ve found support, clarity, and peace.
+            </p>
+          </div>
 
-            {/* CTA Button */}
-            <div className="flex justify-center lg:justify-end lg:shrink-0">
-              <Link
-                href="/docs"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-2 rounded-lg font-satoshi text-base lg:text-lg transition-all hover:opacity-90 text-[#1F2937]"
-                style={{
-                  background: "#FFFFFF",
-                  fontWeight: 400,
-                }}
-              >
-                Explore the Playbook
-                <Image
-                  src="/assets/Vector.svg"
-                  alt=""
-                  width={10}
-                  height={10}
-                  className="transition-transform duration-200 ease-out group-hover:translate-x-1"
-                />
-              </Link>
-            </div>
+          {/* CTA Button */}
+          <div className="flex justify-center lg:justify-end lg:shrink-0">
+            <Link
+              href="/docs"
+              className="group inline-flex items-center justify-center gap-2 px-6 py-2 rounded-lg font-satoshi text-base lg:text-lg transition-all hover:opacity-90 text-[#1F2937]"
+              style={{
+                background: "#FFFFFF",
+                fontWeight: 400,
+              }}
+            >
+              Explore the Playbook
+              <Image
+                src="/assets/Vector.svg"
+                alt=""
+                width={10}
+                height={10}
+                className="transition-transform duration-200 ease-out group-hover:translate-x-1"
+              />
+            </Link>
           </div>
         </div>
+      </div>
     </section>
   );
 };
