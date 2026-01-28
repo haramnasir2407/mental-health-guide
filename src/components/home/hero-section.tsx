@@ -243,24 +243,6 @@ export function HeroSection() {
                 />
               </Link>
 
-              {/* Powered by Carbonteq - Desktop aligned at border end */}
-              <div className="hidden lg:flex items-center gap-2 lg:ml-4 xl:ml-6 2xl:ml-40 whitespace-nowrap">
-                <span
-                  className="text-xs lg:text-sm font-satoshi"
-                  style={{
-                    color: "#9CA3AF",
-                  }}
-                >
-                  Powered by
-                </span>
-                <Image
-                  src="/assets/carbonteq.svg"
-                  alt="Carbonteq"
-                  width={110}
-                  height={22}
-                />
-              </div>
-
               {/* Powered by Carbonteq - Mobile only */}
               <div className="lg:hidden flex items-center gap-2 ml-auto">
                 <span
@@ -279,6 +261,31 @@ export function HeroSection() {
                 />
               </div>
 
+              <Image
+                src="/assets/arrow.svg"
+                alt=""
+                width={8}
+                height={8}
+                className="ml-2 opacity-60 lg:hidden"
+              />
+            </div>
+
+            {/* Powered by Carbonteq - Desktop aligned at border's vertical line */}
+            <div className="hidden lg:flex items-center gap-2 absolute lg:right-10 xl:right-14 2xl:right-20 lg:top-[418px] xl:top-[455px] 2xl:top-[520px] whitespace-nowrap">
+              <span
+                className="text-xs lg:text-sm font-satoshi"
+                style={{
+                  color: "#9CA3AF",
+                }}
+              >
+                Powered by
+              </span>
+              <Image
+                src="/assets/carbonteq.svg"
+                alt="Carbonteq"
+                width={110}
+                height={22}
+              />
               <Image
                 src="/assets/arrow.svg"
                 alt=""
