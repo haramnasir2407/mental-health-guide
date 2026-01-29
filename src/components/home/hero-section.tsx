@@ -55,7 +55,7 @@ export function HeroSection() {
             </h1>
 
             <h1
-              className={`hidden lg:block text-4xl sm:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl leading-[1.1] ${tenorSans.className}`}
+              className={`hidden lg:block text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[1.1] ${tenorSans.className}`}
               style={{
                 fontWeight: 400,
                 color: "#000000",
@@ -69,7 +69,7 @@ export function HeroSection() {
             </h1>
 
             {/* Mobile Decorative Elements */}
-            <div className="relative h-[280px] lg:hidden my-8 mx-auto max-w-[400px] w-full">
+            <div className="relative h-[320px] lg:hidden my-8 mx-auto max-w-[400px] w-full">
               {/* Gradient Ellipse Background */}
               <div
                 className={`w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-140 ${pulseSlowAnimation}`}
@@ -115,13 +115,13 @@ export function HeroSection() {
                 <Image
                   src="/assets/ellipse1_2.svg"
                   alt=""
-                  width={100}
-                  height={100}
+                  width={80}
+                  height={80}
                   className="opacity-100"
                 />
               </div>
               <div
-                className={`absolute top-[5%] right-[28%] z-20 ${bobAnimation}`}
+                className={`absolute top-[4%] right-[26%] z-20 ${bobAnimation}`}
               >
                 <div className="w-[100px] h-[100px] flex items-center justify-center">
                   <Image
@@ -147,8 +147,8 @@ export function HeroSection() {
                 <Image
                   src="/assets/ellipse1_2.svg"
                   alt=""
-                  width={110}
-                  height={110}
+                  width={90}
+                  height={90}
                   className="opacity-100"
                 />
               </div>
@@ -159,8 +159,8 @@ export function HeroSection() {
                   <Image
                     src="/assets/flower2.svg"
                     alt=""
-                    width={70}
-                    height={70}
+                    width={60}
+                    height={60}
                   />
                 </div>
               </div>
@@ -172,8 +172,8 @@ export function HeroSection() {
                 <Image
                   src="/assets/ellipse3.svg"
                   alt=""
-                  width={90}
-                  height={90}
+                  width={80}
+                  height={80}
                   className="opacity-100"
                 />
               </div>
@@ -210,7 +210,7 @@ export function HeroSection() {
             </div>
 
             <p
-              className="text-sm lg:text-sm xl:text-[15px] 2xl:text-base leading-relaxed lg:max-w-md xl:max-w-[480px] 2xl:max-w-lg font-satoshi text-center lg:text-left"
+              className="text-sm lg:text-sm xl:text-[18px] 2xl:text-base leading-relaxed lg:max-w-md xl:max-w-[480px] 2xl:max-w-lg font-satoshi text-center lg:text-left"
               style={{
                 color: "#6B7280",
                 fontWeight: 400,
@@ -244,7 +244,7 @@ export function HeroSection() {
               </Link>
 
               {/* Powered by Carbonteq - Mobile only */}
-              <div className="lg:hidden flex items-center gap-2 ml-auto">
+              <div className="lg:hidden flex flex-col items-end gap-1 ml-auto sm:flex-row sm:items-center sm:gap-2">
                 <span
                   className="text-xs font-satoshi"
                   style={{
@@ -271,7 +271,7 @@ export function HeroSection() {
             </div>
 
             {/* Powered by Carbonteq - Desktop aligned at border's vertical line */}
-            <div className="hidden lg:flex items-center gap-2 absolute lg:right-10 xl:right-14 2xl:right-20 lg:top-[418px] xl:top-[455px] 2xl:top-[520px] whitespace-nowrap">
+            <div className="hidden lg:flex items-center gap-2 absolute lg:right-10 xl:right-14 2xl:right-20 lg:top-[455px] xl:top-[600px] 2xl:top-[580px] whitespace-nowrap">
               <span
                 className="text-xs lg:text-sm font-satoshi"
                 style={{
@@ -388,7 +388,7 @@ export function HeroSection() {
 
             {/* Bottom Left Circle with Flower */}
             <div
-              className={`absolute lg:bottom-[22%] lg:left-[10%] xl:bottom-[22%] xl:left-[12%] 2xl:bottom-[20%] 2xl:left-[15%] z-10 ${pulseSlowAnimation}`}
+              className={`absolute lg:bottom-[22%] lg:left-[16%] xl:bottom-[22%] xl:left-[18%] 2xl:bottom-[20%] 2xl:left-[15%] z-10 ${pulseSlowAnimation}`}
             >
               <Image
                 src="/assets/ellipse1_2.svg"
@@ -400,7 +400,7 @@ export function HeroSection() {
             </div>
 
             <div
-              className={`absolute lg:bottom-[25%] lg:left-[18%] xl:bottom-[25%] xl:left-[18%] 2xl:bottom-[25%] 2xl:left-[20%] z-10 ${floatAnimation}`}
+              className={`absolute lg:bottom-[25%] lg:left-[20%] xl:bottom-[25%] xl:left-[22%] 2xl:bottom-[25%] 2xl:left-[20%] z-10 ${floatAnimation}`}
             >
               <Image
                 src="/assets/flower2.svg"
@@ -437,14 +437,14 @@ export function HeroSection() {
               />
             </div>
             <div
-              className={`absolute lg:top-[48%] lg:right-[16%] xl:top-[48%] xl:right-[18%] 2xl:top-[48%] 2xl:right-[20%] z-30 ${rotateSlowAnimation}`}
+              className={`absolute lg:top-[48%] lg:right-[10%] xl:top-[48%] xl:right-[16%] 2xl:top-[48%] 2xl:right-[20%] z-30 ${rotateSlowAnimation}`}
             >
               <Image 
                 src="/assets/star2.svg" 
                 alt="" 
                 className="lg:w-[28px] lg:h-[28px] xl:w-[31px] xl:h-[31px] 2xl:w-[35px] 2xl:h-[35px]"
-                width={35} 
-                height={35} 
+                width={30} 
+                height={30} 
               />
             </div>
           </div>
