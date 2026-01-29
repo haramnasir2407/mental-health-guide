@@ -160,7 +160,7 @@ nav[data-orientation="horizontal"] {
 /* Nav links - font family and color */
 nav[data-orientation="horizontal"] a {
   font-family: "Satoshi" !important;
-  color: #1A1A1A !important;
+  color: #1a1a1a !important;
   font-weight: 400 !important;
   font-size: 16px !important;
 }
@@ -177,7 +177,7 @@ div.backdrop-blur-lg {
 
 /* Main docs content area (center column) */
 article#nd-page {
-  background-image: url('/assets/Background-Pattern.jpg');
+  background-image: url("/assets/Background-Pattern.jpg");
 }
 
 /* Search bar styling */
@@ -211,5 +211,14 @@ button[data-search-full] {
   /* Show search bar (and right block) from 768px up */
   #nd-nav nav > div {
     display: flex !important;
+  }
+}
+
+/* 640px - 768px: hamburger dropdown nav items in column, start-aligned (override sm:flex-row) */
+@media (min-width: 640px) and (max-width: 767px) {
+  #nd-nav [class*="sm:flex-row"] {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
   }
 }
