@@ -49,18 +49,18 @@ export function WellbeingStatsSection() {
           <div className="lg:hidden absolute -top-8 right-4">
             <div className="relative w-20 h-16">
               {/* Paw 3 (Top - appears last) */}
-              <div className="absolute top-2 left-1/2 -translate-x-1 animate-[appearPaw3_5s_linear_infinite]">
-                <Image src="/assets/paw3.svg" alt="" width={20} height={20} />
+              <div className="absolute top-0 left-12 animate-[appearPaw3_5s_linear_infinite]">
+                <Image src="/assets/paw3.svg" alt="" width={22} height={22} />
               </div>
 
               {/* Paw 1 (Bottom Left - appears first) */}
-              <div className="absolute bottom-6 left-12 animate-[appearPaw1_5s_linear_infinite]">
-                <Image src="/assets/paw1.svg" alt="" width={20} height={20} />
+              <div className="absolute bottom-6 left-14 animate-[appearPaw1_5s_linear_infinite]">
+                <Image src="/assets/paw1.svg" alt="" width={22} height={22} />
               </div>
 
               {/* Paw 2 (Bottom Right - appears second) */}
-              <div className="absolute bottom-8 -right-2 animate-[appearPaw2_5s_linear_infinite]">
-                <Image src="/assets/paw2.svg" alt="" width={20} height={20} />
+              <div className="absolute bottom-10 -right-4 animate-[appearPaw2_5s_linear_infinite]">
+                <Image src="/assets/paw2.svg" alt="" width={22} height={22} />
               </div>
             </div>
           </div>
@@ -70,27 +70,27 @@ export function WellbeingStatsSection() {
             {/* Walking Paws Animation */}
             <div className="relative flex flex-col items-center gap-1">
               {/* Paw 5 (Top - appears last) */}
-              <div className="animate-[appearPaw5_5s_linear_infinite]">
+              <div className="animate-[appearPaw5_5s_linear_infinite] -ml-4">
                 <Image src="/assets/paw5.svg" alt="" width={30} height={30} />
               </div>
 
               {/* Paw 4 */}
-              <div className="animate-[appearPaw4_5s_linear_infinite] -ml-6">
+              <div className="animate-[appearPaw4_5s_linear_infinite] -ml-16">
                 <Image src="/assets/paw4.svg" alt="" width={32} height={32} />
               </div>
 
               {/* Paw 3 */}
-              <div className="animate-[appearPaw3_5s_linear_infinite] ml-1">
+              <div className="animate-[appearPaw3_5s_linear_infinite] -ml-4">
                 <Image src="/assets/paw3.svg" alt="" width={32} height={32} />
               </div>
 
               {/* Paw 2 */}
-              <div className="animate-[appearPaw2_5s_linear_infinite] -ml-8">
+              <div className="animate-[appearPaw2_5s_linear_infinite] -ml-16">
                 <Image src="/assets/paw2.svg" alt="" width={32} height={32} />
               </div>
 
               {/* Paw 1 (Bottom - appears first) */}
-              <div className="animate-[appearPaw1_5s_linear_infinite] -ml-1">
+              <div className="animate-[appearPaw1_5s_linear_infinite] -ml-6">
                 <Image src="/assets/paw1.svg" alt="" width={32} height={32} />
               </div>
             </div>
