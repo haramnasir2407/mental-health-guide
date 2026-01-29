@@ -100,7 +100,7 @@ export function WellbeingStatsSection() {
           <div className="lg:col-span-5 space-y-6">
             {/* Desktop Version */}
             <h2
-              className={`hidden lg:block text-3xl sm:text-4xl lg:text-5xl leading-tight ${tenorSans.className}`}
+              className={`hidden lg:block text-4xl leading-tight ${tenorSans.className}`}
               style={{
                 color: "#1F2937",
                 fontWeight: 400,
@@ -122,7 +122,7 @@ export function WellbeingStatsSection() {
 
             {/* Mobile Version - centered with underline under Matters */}
             <h2
-              className={`lg:hidden text-3xl sm:text-4xl text-center leading-tight ${tenorSans.className}`}
+              className={`lg:hidden text-3xl text-center leading-tight ${tenorSans.className}`}
               style={{
                 color: "#1F2937",
                 fontWeight: 400,
@@ -142,9 +142,9 @@ export function WellbeingStatsSection() {
             </h2>
 
             <p
-              className="text-sm lg:text-base text-center lg:text-left leading-relaxed font-satoshi"
+              className="text-base lg:text-lg text-center lg:text-left leading-relaxed font-satoshi"
               style={{
-                color: "#6B7280",
+                color: "#1A1A1A",
                 fontWeight: 400,
                 lineHeight: "1.75",
               }}
@@ -193,7 +193,7 @@ export function WellbeingStatsSection() {
 
                   {/* Percentage */}
                   <h3
-                    className={`text-4xl lg:text-5xl mb-4 ${tenorSans.className}`}
+                    className={`text-3xl lg:text-4xl mb-4 ${tenorSans.className}`}
                     style={{
                       color: "#1F2937",
                       fontWeight: 400,

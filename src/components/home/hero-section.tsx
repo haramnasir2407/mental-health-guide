@@ -210,10 +210,10 @@ export function HeroSection() {
             </div>
 
             <p
-              className="text-sm lg:text-sm xl:text-[18px] 2xl:text-base leading-relaxed lg:max-w-md xl:max-w-[480px] 2xl:max-w-lg font-satoshi text-center lg:text-left"
+              className="text-base lg:text-lg leading-relaxed lg:max-w-md xl:max-w-[480px] 2xl:max-w-lg font-satoshi text-center lg:text-left"
               style={{
-                color: "#6B7280",
-                fontWeight: 400,
+                color: "#1A1A1A",
+                fontWeight: 300,
                 lineHeight: "1.75",
               }}
             >
@@ -271,7 +271,7 @@ export function HeroSection() {
             </div>
 
             {/* Powered by Carbonteq - Desktop aligned at border's vertical line */}
-            <div className="hidden lg:flex items-center gap-2 absolute lg:right-10 xl:right-14 2xl:right-20 lg:top-[455px] xl:top-[600px] 2xl:top-[580px] whitespace-nowrap">
+            <div className="hidden lg:flex items-center gap-2 absolute lg:right-10 xl:right-14 2xl:right-20 lg:top-[520px] xl:top-[600px] 2xl:top-[580px] whitespace-nowrap">
               <span
                 className="text-xs lg:text-sm font-satoshi"
                 style={{
