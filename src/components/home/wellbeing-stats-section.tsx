@@ -49,18 +49,18 @@ export function WellbeingStatsSection() {
           <div className="lg:hidden absolute -top-8 right-4">
             <div className="relative w-20 h-16">
               {/* Paw 3 (Top - appears last) */}
-              <div className="absolute top-2 left-1/2 -translate-x-1/2 animate-[appearPaw3_5s_linear_infinite]">
-                <Image src="/assets/paw3.svg" alt="" width={24} height={24} />
+              <div className="absolute top-2 left-1/2 -translate-x-1 animate-[appearPaw3_5s_linear_infinite]">
+                <Image src="/assets/paw3.svg" alt="" width={20} height={20} />
               </div>
 
               {/* Paw 1 (Bottom Left - appears first) */}
-              <div className="absolute bottom-2 left-8 animate-[appearPaw1_5s_linear_infinite]">
-                <Image src="/assets/paw1.svg" alt="" width={24} height={24} />
+              <div className="absolute bottom-6 left-12 animate-[appearPaw1_5s_linear_infinite]">
+                <Image src="/assets/paw1.svg" alt="" width={20} height={20} />
               </div>
 
               {/* Paw 2 (Bottom Right - appears second) */}
-              <div className="absolute bottom-6 right-1 animate-[appearPaw2_5s_linear_infinite]">
-                <Image src="/assets/paw2.svg" alt="" width={24} height={24} />
+              <div className="absolute bottom-8 -right-2 animate-[appearPaw2_5s_linear_infinite]">
+                <Image src="/assets/paw2.svg" alt="" width={20} height={20} />
               </div>
             </div>
           </div>
