@@ -4,7 +4,7 @@ import Image from "next/image";
 export function baseOptions(): BaseLayoutProps {
   return {
     nav: {
-      title: <Image src="/assets/logo.svg" alt="Logo" width={56} height={35} />,
+      title: <Image src="/assets/logo.svg" alt="Logo" width={60} height={35} />,
       url: "/",
     },
     links: [

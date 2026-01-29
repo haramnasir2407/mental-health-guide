@@ -186,3 +186,30 @@ button[data-search-full] {
   background: #ffffff;
   border: 1px solid #070707;
 }
+
+/* ===== Home layout nav (hamburger + dropdown) ===== */
+@media (max-width: 767px) {
+  /* Show nav items in hamburger dropdown for 640px–768px (override fumadocs sm:hidden) */
+  #nd-nav [class*="sm:hidden"] {
+    display: flex !important;
+  }
+
+  /* Hide desktop nav and right block */
+  #nd-nav nav > ul:first-of-type,
+  #nd-nav nav > div {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  #nd-nav nav > ul:last-of-type {
+    display: none !important;
+  }
+  #nd-nav nav > ul:first-of-type {
+    display: flex !important;
+  }
+  /* Show search bar (and right block) from 768px up */
+  #nd-nav nav > div {
+    display: flex !important;
+  }
+}
