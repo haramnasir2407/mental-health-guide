@@ -227,7 +227,7 @@ export function HeroSection() {
             <div className="flex flex-row items-center space-x-2 lg:space-x-3 xl:space-x-2 2xl:space-x-4">
               <Link
                 href="/docs"
-                className="group inline-flex items-center justify-center gap-2 px-3 lg:px-6 xl:px-6 2xl:px-8 py-2 lg:py-3 xl:py-2.5 2xl:py-3.5 rounded-md sm:rounded-lg text-white font-base transition-all hover:opacity-90 w-fit font-satoshi text-xs lg:text-base xl:text-sm 2xl:text-lg hover:bg-[#7A39B8] whitespace-nowrap"
+                className="group inline-flex items-center justify-center gap-2 px-3 lg:px-6 xl:px-6 2xl:px-8 py-2 lg:py-3 xl:py-2.5 2xl:py-3.5 rounded-md text-white font-base transition-all hover:opacity-90 w-fit font-satoshi text-xs lg:text-base xl:text-sm 2xl:text-lg hover:bg-[#7A39B8] whitespace-nowrap"
                 style={{
                   background: "#9254DE",
                 }}

@@ -50,7 +50,7 @@ export const CTASection: React.FC = () => {
           <div className="flex justify-center lg:justify-end lg:shrink-0">
             <Link
               href="/docs"
-              className="group inline-flex items-center justify-center gap-2 px-6 py-2 rounded-lg font-satoshi text-base lg:text-lg transition-all hover:opacity-90 text-[#1F2937]"
+              className="group inline-flex items-center justify-center gap-2 px-6 py-2 rounded-md font-satoshi text-base lg:text-lg transition-all hover:opacity-90 text-[#1F2937]"
               style={{
                 background: "#FFFFFF",
                 fontWeight: 400,
