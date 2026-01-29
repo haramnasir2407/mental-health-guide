@@ -160,9 +160,17 @@ nav[data-orientation="horizontal"] {
 /* Full-width header border */
 div.backdrop-blur-lg {
   border-bottom: 1px solid #070707 !important;
+  background: #ffffff;
 }
 
 /* Main docs content area (center column) */
 article#nd-page {
   background-image: url('/assets/Background-Pattern.jpg');
+}
+
+/* Search bar styling */
+button[data-search-full] {
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #070707;
 }
