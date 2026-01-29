@@ -32,7 +32,7 @@ export function HeroSection() {
             <div className="hidden lg:block absolute lg:-top-3 xl:-top-4 2xl:-top-5 lg:right-10 xl:right-14 2xl:right-20 lg:w-48 xl:w-52 2xl:w-60 h-50 border-t border-r border-r-gray-950 border-t-gray-950 opacity-100"></div>
 
             {/* Decorative Border mobile */}
-            <div className="lg:hidden absolute -top-6 left-1 w-30 h-30 border-t border-l border-l-gray-950 border-t-gray-950 opacity-100"></div>
+            <div className="lg:hidden absolute -top-4 left-1 w-30 h-30 border-t border-l border-l-gray-950 border-t-gray-950 opacity-100"></div>
 
             <p
               className="text-lg tracking-wide font-satoshi lg:text-left text-center"

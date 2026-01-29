@@ -38,7 +38,7 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({
   return (
     <>
       {/* Desktop Version */}
-      <div className="hidden lg:block relative w-full max-w-[1312px] h-[421px] border border-[#1A1A1A] bg-white">
+      <div className="hidden lg:block relative w-full max-w-[1312px] h-[421px] border border-[#1A1A1A]">
         <div className="grid grid-cols-[355px_1fr] h-full">
           {/* Left Section - Illustration with Gradient */}
           <div

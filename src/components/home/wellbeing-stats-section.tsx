@@ -37,7 +37,10 @@ export function WellbeingStatsSection() {
     <section
       className="relative overflow-hidden px-6 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-20"
       style={{
-        background: "#F8F9FA",
+        backgroundImage: "url('/assets/Background-Pattern.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <div className="max-w-[1440px] mx-auto">
@@ -154,7 +157,7 @@ export function WellbeingStatsSection() {
           </div>
 
           {/* Right Stats Grid */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 bg-[#FFFFFF]">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
               {stats.map((stat, index) => (
                 <div

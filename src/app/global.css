@@ -152,3 +152,17 @@ button[data-active="true"] {
     opacity: 0;
   }
 }
+
+nav[data-orientation="horizontal"] {
+  height: 4rem; 
+}
+
+/* Full-width header border */
+div.backdrop-blur-lg {
+  border-bottom: 1px solid #070707 !important;
+}
+
+/* Main docs content area (center column) */
+article#nd-page {
+  background-image: url('/assets/Background-Pattern.jpg');
+}
