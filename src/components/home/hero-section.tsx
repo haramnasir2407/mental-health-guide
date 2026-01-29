@@ -37,7 +37,7 @@ export function HeroSection() {
             <p
               className="text-lg tracking-wide font-satoshi lg:text-left text-center"
               style={{
-                color: "#6B7280",
+                color: "#1A1A1A",
                 fontWeight: 400,
               }}
             >
@@ -48,7 +48,7 @@ export function HeroSection() {
               className={`lg:hidden text-4xl sm:text-5xl text-center leading-tight ${tenorSans.className}`}
               style={{
                 fontWeight: 400,
-                color: "#000000",
+                color: "#1A1A1A",
               }}
             >
               Mental <br /> Health Guide

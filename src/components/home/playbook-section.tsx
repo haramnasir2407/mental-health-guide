@@ -20,6 +20,9 @@ export function PlaybookSection() {
         <div className="lg:hidden text-center mb-8">
           <h2
             className={`text-3xl leading-tight ${tenorSans.className}`}
+            style={{
+              color: "#001100",
+            }}
           >
             What You Will{" "}
             <span className="relative inline-block">
@@ -56,6 +59,9 @@ export function PlaybookSection() {
             <div className="relative mb-8">
               <h2
                 className={`text-4xl leading-tight ${tenorSans.className}`}
+                style={{
+                  color: "#001100",
+                }}
               >
                 What You Will{" "}
                 <span className="relative inline-block">

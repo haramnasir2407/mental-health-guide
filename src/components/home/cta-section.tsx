@@ -26,7 +26,7 @@ export const CTASection: React.FC = () => {
             <h2
               className={`text-3xl lg:text-4xl leading-tight ${tenorSans.className}`}
               style={{
-                color: "#1F2937",
+                color: "#001100",
                 fontWeight: 400,
               }}
             >
@@ -37,7 +37,7 @@ export const CTASection: React.FC = () => {
             <p
               className="text-sm sm:text-base lg:text-lg font-satoshi max-w-[350px] mx-auto lg:mx-0 lg:max-w-[520px]"
               style={{
-                color: "#4B5563",
+                color: "#1A1A1A",
                 fontWeight: 400,
                 lineHeight: "1.75",
               }}

@@ -8,7 +8,7 @@ export function MovingBanner() {
     >
       <div className="flex whitespace-nowrap animate-[scroll_25s_linear_infinite]">
         {/* First set of messages */}
-        <div className="flex items-center gap-16 px-8 lg:text-base text-sm font-satoshi font-light text-gray-800">
+        <div className="flex items-center gap-16 px-8 lg:text-base text-sm font-satoshi font-light text-[#1A1A1A]">
           <span>We&apos;re here to Help!</span>
           <span>You&apos;re not alone in this!</span>
           <span>We&apos;re with you every step!</span>
@@ -19,7 +19,7 @@ export function MovingBanner() {
           <span>You don&apos;t have to face it alone!</span>
         </div>
         {/* Duplicate set for seamless infinite scroll */}
-        <div className="flex items-center gap-16 px-8 lg:text-base text-sm font-satoshi font-light text-gray-800">
+        <div className="flex items-center gap-16 px-8 lg:text-base text-sm font-satoshi font-light text-[#1A1A1A]">
           <span>We&apos;re here to Help!</span>
           <span>You&apos;re not alone in this!</span>
           <span>We&apos;re with you every step!</span>

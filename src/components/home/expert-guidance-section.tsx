@@ -23,9 +23,9 @@ export const ExpertGuidanceSection: React.FC = () => {
           {/* Header */}
           <div className="text-center lg:text-left space-y-3">
             <h2
-              className={`text-3xl sm:text-4xl leading-tight ${tenorSans.className}`}
+              className={`text-3xl lg:text-4xl leading-tight ${tenorSans.className}`}
               style={{
-                color: "#1F2937",
+                color: "#001100",
                 fontWeight: 400,
               }}
             >
@@ -42,17 +42,14 @@ export const ExpertGuidanceSection: React.FC = () => {
               </span>
             </h2>
             <p
-              className="text-sm sm:text-base font-satoshi"
-              style={{
-                color: "#6B7280",
-                fontWeight: 400,
-              }}
+              className="text-base lg:text-lg font-satoshi"
+              style={{ color: "#1A1A1A", fontWeight: 400 }}
             >
               Collaborating with leading mental health professionals.
             </p>
           </div>
           {/* Mobile: Stacked Layout, Desktop: Grid Layout */}
-          <div className="flex flex-col lg:flex-row lg:gap-2 lg:items-center space-y-8 lg:space-y-0">
+          <div className="flex flex-col lg:flex-row lg:gap-4 lg:items-center space-y-8 lg:space-y-0">
             {/* Profile Card - Left on Desktop */}
             <div className="relative w-full max-w-[300px] mx-auto lg:mx-0">
               {/* Frame Background */}
@@ -83,10 +80,10 @@ export const ExpertGuidanceSection: React.FC = () => {
             <div className="space-y-6 lg:space-y-4">
               {/* Name */}
               <h3
-                className="text-xl lg:text-2xl text-center lg:text-left text-[#1F2937] font-satoshi"
+                className="text-2xl lg:text-3xl text-center lg:text-left text-[#1F2937] font-satoshi"
                 style={{
                   fontWeight: 500,
-                  color: "#1F2937",
+                  color: "#001100",
                 }}
               >
                 Dr. Arman Ahmed
@@ -94,9 +91,9 @@ export const ExpertGuidanceSection: React.FC = () => {
 
               {/* Title */}
               <p
-                className="text-xs lg:text-base text-center lg:text-left my-2 font-satoshi"
+                className="text-sm lg:text-base text-center lg:text-left my-2 font-satoshi"
                 style={{
-                  color: "#808080",
+                  color: "#666666",
                   fontWeight: 400,
                 }}
               >
@@ -105,9 +102,9 @@ export const ExpertGuidanceSection: React.FC = () => {
 
               {/* Description */}
               <p
-                className="text-xs lg:text-sm text-center lg:text-left leading-relaxed font-satoshi mx-auto lg:mx-0 max-w-[280px] lg:max-w-none"
+                className="text-sm lg:text-base text-center lg:text-left leading-relaxed font-satoshi mx-auto lg:mx-0 max-w-[280px] lg:max-w-none"
                 style={{
-                  color: "#4B5563",
+                  color: "#1A1A1A",
                   fontWeight: 400,
                   lineHeight: "1.5",
                 }}

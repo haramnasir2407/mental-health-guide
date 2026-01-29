@@ -55,7 +55,7 @@ export const ResourcesShowcase: React.FC = () => {
 
   return (
     <section
-      className="relative overflow-hidden px-6 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-20"
+      className="relative overflow-hidden px-4 py-12 sm:px-6 sm:py-16 lg:px-16 lg:py-20"
       style={{
         backgroundImage: "url('/assets/Background-Pattern.jpg')",
         backgroundSize: "cover",
@@ -63,14 +63,14 @@ export const ResourcesShowcase: React.FC = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="max-w-[1440px] mx-auto ">
+      <div className="max-w-[1440px] mx-auto w-full">
         <div className="space-y-8 lg:space-y-12">
           {/* Desktop Version - Left Aligned */}
           <div className="space-y-4">
             <h2
-              className={`hidden lg:block text-3xl sm:text-4xl lg:text-5xl text-left leading-tight ${tenorSans.className}`}
+              className={`hidden lg:block text-4xl text-left leading-tight ${tenorSans.className}`}
               style={{
-                color: "#1F2937",
+                color: "#001100",
                 fontWeight: 400,
               }}
             >
@@ -90,9 +90,9 @@ export const ResourcesShowcase: React.FC = () => {
 
             {/* Mobile Version - Centered */}
             <h2
-              className={`lg:hidden text-3xl sm:text-4xl text-center leading-tight ${tenorSans.className}`}
+              className={`lg:hidden text-3xl text-center leading-tight ${tenorSans.className}`}
               style={{
-                color: "#1F2937",
+                color: "#001100",
                 fontWeight: 400,
               }}
             >
@@ -112,7 +112,7 @@ export const ResourcesShowcase: React.FC = () => {
             <p
               className="hidden lg:block text-base lg:text-lg text-center lg:text-left leading-relaxed font-satoshi"
               style={{
-                color: "#6B7280",
+                color: "#1A1A1A",
                 fontWeight: 400,
                 lineHeight: "1.75",
               }}
@@ -122,15 +122,15 @@ export const ResourcesShowcase: React.FC = () => {
           </div>
 
           {/* Slider Container */}
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden w-full">
             <div
-              className="flex transition-transform duration-500 ease-in-out"
+              className="flex transition-transform duration-500 ease-in-out w-full"
               style={{
                 transform: `translateX(-${currentIndex * 100}%)`,
               }}
             >
               {resources.map((resource, index) => (
-                <div key={index} className="min-w-full shrink-0">
+                <div key={index} className="min-w-full shrink-0 w-full">
                   <ResourceCard
                     title={resource.title}
                     description={resource.description}

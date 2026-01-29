@@ -38,8 +38,8 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({
   return (
     <>
       {/* Desktop Version */}
-      <div className="hidden lg:block relative w-full max-w-[1312px] h-[421px] border border-[#1A1A1A]">
-        <div className="grid grid-cols-[355px_1fr] h-full">
+      <div className="hidden lg:block relative w-full max-w-full lg:max-w-[calc(100vw-8rem)] xl:max-w-[1312px] h-[421px] border border-[#1A1A1A] overflow-hidden">
+        <div className="grid h-full w-full" style={{ gridTemplateColumns: 'minmax(0, min(355px, 35%)) 1fr' }}>
           {/* Left Section - Illustration with Gradient */}
           <div
             className="relative border-r border-[#1A1A1A] overflow-hidden"
@@ -60,15 +60,15 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({
           </div>
 
           {/* Right Section - Grid Layout */}
-          <div className="grid grid-cols-[1fr_187px] h-full">
+          <div className="grid h-full" style={{ gridTemplateColumns: '1fr minmax(0, 187px)' }}>
             {/* Text Content - Full Height */}
-            <div className="flex flex-col justify-center px-12 py-8 border-r border-[#1A1A1A]">
+            <div className="flex flex-col justify-center px-6 lg:px-8 xl:px-12 py-8 border-r border-[#1A1A1A]">
               <h3
-                className={`text-2xl sm:text-3xl lg:text-3xl leading-tight text-[#001100] mb-2 ${tenorSans.className}`}
+                className={`text-2xl sm:text-3xl lg:text-3xl leading-tight text-[#001100] mb-4 ${tenorSans.className}`}
               >
                 {title}
               </h3>
-              <p className="text-xs lg:text-sm text-[#001100]/60  w-full">
+              <p className="text-xs lg:text-sm text-[#1A1A1A] w-full">
                 {description}
               </p>
             </div>
@@ -134,7 +134,7 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({
       </div>
 
       {/* Mobile Version */}
-      <div className="lg:hidden relative w-full max-w-[300px] mx-auto border border-[#1A1A1A] bg-white">
+      <div className="lg:hidden relative w-full sm:max-w-[300px] sm:mx-auto border border-[#1A1A1A] bg-white">
         {/* Top Section - Gradient with Illustration */}
         <div
           className="relative h-[280px] border-b border-[#1A1A1A]"
@@ -155,13 +155,13 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({
         </div>
 
         {/* Middle Section - Title and Description */}
-        <div className="border-b border-[#1A1A1A] px-6 py-6 text-center">
+        <div className="border-b border-[#1A1A1A] px-4 sm:px-6 py-6 text-center">
           <h3
             className={`text-base leading-tight text-[#001100] mb-2 ${tenorSans.className}`}
           >
             {title}
           </h3>
-          <p className="text-xs text-[#001100]/60 leading-normal">
+          <p className="text-xs text-[#1A1A1A] leading-normal">
             {description}
           </p>
         </div>

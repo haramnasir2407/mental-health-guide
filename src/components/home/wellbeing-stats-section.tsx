@@ -102,7 +102,7 @@ export function WellbeingStatsSection() {
             <h2
               className={`hidden lg:block text-4xl leading-tight ${tenorSans.className}`}
               style={{
-                color: "#1F2937",
+                color: "#001100",
                 fontWeight: 400,
               }}
             >
@@ -124,7 +124,7 @@ export function WellbeingStatsSection() {
             <h2
               className={`lg:hidden text-3xl text-center leading-tight ${tenorSans.className}`}
               style={{
-                color: "#1F2937",
+                color: "#001100",
                 fontWeight: 400,
               }}
             >
