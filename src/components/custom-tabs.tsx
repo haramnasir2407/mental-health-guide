@@ -13,7 +13,7 @@ export const CustomTabs = ({ items, children }: CustomTabsProps) => {
 
   return (
     <div className="my-8">
-      <div className="flex gap-0 mb-6">
+      <div className="flex gap-0 mb-6 bg-[#e8e6e6] p-1">
         {items.map((item) => (
           <button
             key={item.label}

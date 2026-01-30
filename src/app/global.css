@@ -24,6 +24,29 @@ button[data-active="true"] {
   ) !important;
 }
 
+/* Sidebar and drawer background color */
+#nd-sidebar,
+[data-sidebar-content],
+[class*="sidebar"] {
+  background-color: #ffffff;
+}
+
+/* Drawer icon color */
+svg.lucide.lucide-panel-left,
+.lucide-panel-left,
+button[aria-label*="sidebar"] svg,
+button[aria-label*="drawer"] svg {
+  color: #000000 !important;
+}
+
+/* Reduce paragraph margins inside colored info boxes */
+.info-box p,
+.info-box p:first-child,
+.info-box p:last-child {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 @layer utilities {
   .font-satoshi {
     font-family: "Satoshi", sans-serif;
@@ -177,7 +200,26 @@ div.backdrop-blur-lg {
 
 /* Main docs content area (center column) */
 article#nd-page {
+  background-color: #ffffff;
   background-image: url("/assets/Background-Pattern.jpg");
+  background-repeat: repeat;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+}
+
+/* Download link sizing in docs */
+article#nd-page a[download] {
+  height: 24px;
+}
+
+/* H2 and H3 spacing in docs content */
+article#nd-page h2,
+article#nd-page h3 {
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 
 /* Search bar styling */
@@ -221,4 +263,36 @@ button[data-search-full] {
     align-items: flex-start !important;
     justify-content: flex-start !important;
   }
+}
+
+/* Docs previous/next navigation cards background */
+article#nd-page
+  [class*="@container"].grid.gap-4
+  > a.flex.flex-col.gap-2.rounded-lg.border.p-4.text-sm {
+  background-color: #ffffff;
+}
+
+/* Right TOC sidebar padding */
+#nd-toc {
+  padding-left: 16px;
+}
+
+#nd-toc a[data-active="true"] {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  position: relative;
+}
+
+#nd-toc a[data-active="true"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+}
+
+/* TOC active scroll indicator bar color */
+#nd-toc .bg-fd-primary {
+  background-color: #9254de !important;
 }

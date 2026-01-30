@@ -22,7 +22,7 @@ export function baseOptions(): BaseLayoutProps {
         text: "Contact Us",
         url: "/docs/support/seek-professional-support",
         active: "nested-url",
-      }
+      },
     ],
     themeSwitch: {
       enabled: false,

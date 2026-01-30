@@ -39,7 +39,10 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({
     <>
       {/* Desktop Version */}
       <div className="hidden lg:block relative w-full max-w-full lg:max-w-[calc(100vw-8rem)] xl:max-w-[1312px] h-[421px] border border-[#1A1A1A] overflow-hidden">
-        <div className="grid h-full w-full" style={{ gridTemplateColumns: 'minmax(0, min(355px, 35%)) 1fr' }}>
+        <div
+          className="grid h-full w-full"
+          style={{ gridTemplateColumns: "minmax(0, min(355px, 35%)) 1fr" }}
+        >
           {/* Left Section - Illustration with Gradient */}
           <div
             className="relative border-r border-[#1A1A1A] overflow-hidden"
@@ -60,7 +63,10 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({
           </div>
 
           {/* Right Section - Grid Layout */}
-          <div className="grid h-full" style={{ gridTemplateColumns: '1fr minmax(0, 187px)' }}>
+          <div
+            className="grid h-full"
+            style={{ gridTemplateColumns: "1fr minmax(0, 187px)" }}
+          >
             {/* Text Content - Full Height */}
             <div className="flex flex-col justify-center px-6 lg:px-8 xl:px-12 py-8 border-r border-[#1A1A1A]">
               <h3
@@ -161,9 +167,7 @@ export const ResourceCard: React.FC<ResourceCardProps> = ({
           >
             {title}
           </h3>
-          <p className="text-xs text-[#1A1A1A] leading-normal">
-            {description}
-          </p>
+          <p className="text-xs text-[#1A1A1A] leading-normal">{description}</p>
         </div>
 
         {/* Number Section */}

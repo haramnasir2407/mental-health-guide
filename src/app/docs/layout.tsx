@@ -9,7 +9,7 @@ export default function Layout({ children }: LayoutProps<"/docs">) {
         tree={source.getPageTree()}
         nav={{
           title: (
-            <Image src="/assets/logo.svg" alt="Logo" width={56} height={35} />
+            <Image src="/assets/logo.svg" alt="Logo" width={76} height={40} />
           ),
           url: "/",
         }}
