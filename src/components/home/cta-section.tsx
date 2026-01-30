@@ -14,7 +14,7 @@ const tenorSans = Tenor_Sans({
 export const CTASection: React.FC = () => {
   return (
     <section
-      className="relative overflow-hidden px-6 py-12 sm:px-8 sm:py-16 lg:px-16 lg:py-20"
+      className="relative overflow-hidden px-4 py-6 lg:px-16 lg:py-16"
       style={{
         background: "linear-gradient(93.75deg, #EFDBFF 30.42%, #ADC6FF 138.5%)",
       }}
